@@ -1,65 +1,100 @@
-import Image from "next/image";
+"use client";
+
+import { motion } from "framer-motion";
+
+import Link from "next/link";
+
+const menuItems = [
+  { label: "ABOUT", id: "about", href: "/about" },
+  { label: "HERRERA\nDYNASTY", id: "dynasty", href: "#dynasty" },
+  { label: "ORDERS &\nDISTINCTIONS", id: "orders", href: "#orders" },
+  { label: "SYMBOLS\nOF THE HOUSE", id: "symbols", href: "#symbols" },
+  { label: "FAMILY ESTATES", id: "estates", href: "#estates" },
+  { label: "BIBLIOGRAPHY", id: "bibliography", href: "#bibliography" },
+];
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="w-full h-[80vh] flex flex-col justify-between relative z-10">
+
+      {/* Background Elements */}
+      <div className="fixed inset-0 z-[-1]">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover opacity-90"
+        >
+          <source src="/covervideo.mp4" type="video/mp4" />
+        </video>
+        <div className="paper-overlay" />
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            zIndex: 5,
+            pointerEvents: 'none',
+            background: 'radial-gradient(circle, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.15) 100%)'
+          }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+      </div>
+
+      {/* Top Section - Empty or Spacer */}
+      <div className="flex-grow flex items-center">
+        {/* Vertical Nav - Left Aligned */}
+        <nav className="flex flex-col gap-9">
+          {menuItems.map((item, index) => (
+            <motion.div
+              key={item.id}
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.2, delay: 0.2 + index * 0.1 }}
+              className="flex flex-col gap-8"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+              {item.id === "about" ? (
+                <Link
+                  href={item.href}
+                  className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-wider text-[0.60rem] font-light text-black/60 hover:text-black text-center"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  href={item.href}
+                  className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-wider text-[0.60rem] font-light text-black/60 hover:text-black text-center"
+                >
+                  {item.label}
+                </a>
+              )}
+              {index < menuItems.length - 1 && (
+                <div
+                  className="w-[88px] h-[1px] my-[2.2rem] bg-[repeating-linear-gradient(90deg,rgba(0,0,0,0.76)_1px,rgba(0,0,0,0.76)_1px,transparent_4px,transparent_5px)]"
+                />
+              )}
+            </motion.div>
+          ))}
+        </nav>
+      </div>
+
+      {/* Bottom Right Watermark */}
+      <div className="flex justify-end">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5, delay: 1 }}
+        >
+          <p
+            className="text-[9px] tracking-[0.1em] text-black/40 font-medium uppercase font-[din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif]"
+          >
+            ©2025 HOUSE OF HERRERA
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+        </motion.div>
+      </div>
+
     </div>
   );
 }
