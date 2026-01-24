@@ -18,11 +18,7 @@
   --font-libre: var(--font-libre);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   background: var(--background);

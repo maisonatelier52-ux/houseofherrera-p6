@@ -38,12 +38,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${libreBaskerville.variable} antialiased min-h-screen flex items-center justify-center`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${libreBaskerville.variable} relative z-10 w-full`}
       >
         {/* Content Layer */}
-        <div className="relative z-10 w-full max-w-4xl">
-          {children}
-        </div>
+
+        {children}
       </body>
     </html>
   );
