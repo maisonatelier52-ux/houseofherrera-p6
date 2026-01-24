@@ -12,19 +12,11 @@ export default function PageTransition({
     const isAboutPage = pathname === "/about";
 
     return (
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait" initial={false}>
             <motion.div
                 key={pathname}
                 className="w-full h-full"
             >
-                {/* Black Overlay Curtain */}
-                <motion.div
-                    className="fixed inset-0 bg-white z-50 pointer-events-none"
-                    initial={{ scaleX: 0, originX: isAboutPage ? 0 : 1 }}
-                    animate={{ scaleX: 0, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.1 } }}
-                    exit={{ scaleX: 1, originX: isAboutPage ? 1 : 0, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } }}
-                />
-
                 {/* Page Content Slide */}
                 <motion.div
                     initial={{ x: isAboutPage ? "100%" : "-20%", opacity: 0 }}
@@ -35,6 +27,14 @@ export default function PageTransition({
                 >
                     {children}
                 </motion.div>
+
+                {/* White Overlay Curtain - Higher Z-index */}
+                <motion.div
+                    className="fixed inset-0 bg-white z-50 pointer-events-none"
+                    initial={{ scaleX: 0, originX: isAboutPage ? 0 : 1 }}
+                    animate={{ scaleX: 0, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.1 } }}
+                    exit={{ scaleX: 1, originX: isAboutPage ? 1 : 0, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } }}
+                />
             </motion.div>
         </AnimatePresence>
     );
