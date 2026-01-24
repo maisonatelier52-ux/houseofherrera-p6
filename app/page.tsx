@@ -89,7 +89,7 @@ export default function Home() {
               transition={{ duration: 1.5, delay: 1 }}
             >
               <p
-                className="text-[9px] tracking-[0.1em] text-[#B5A691] font-medium uppercase font-[din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif]"
+                className="text-[9px] tracking-[0.1em]  text-black/50 font-light uppercase font-[din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif]"
               >
                 ©2025 HOUSE OF HERRERA
               </p>
