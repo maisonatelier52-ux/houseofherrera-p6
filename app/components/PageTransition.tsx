@@ -19,7 +19,7 @@ export default function PageTransition({
             >
                 {/* Black Overlay Curtain */}
                 <motion.div
-                    className="fixed inset-0 bg-black z-50 pointer-events-none"
+                    className="fixed inset-0 bg-white z-50 pointer-events-none"
                     initial={{ scaleX: 0, originX: isAboutPage ? 0 : 1 }}
                     animate={{ scaleX: 0, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.1 } }}
                     exit={{ scaleX: 1, originX: isAboutPage ? 1 : 0, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } }}

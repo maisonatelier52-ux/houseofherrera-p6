@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <div className="min-h-screen w-full flex flex-col bg-black">
+        <div className="min-h-screen w-full flex flex-col bg-white">
             {/* Navigation Container - max-w-5xl */}
             <div className="w-full">
                 <div className="max-w-5xl w-full mx-auto px-8">
@@ -29,15 +29,12 @@ export default function About() {
                 <div className="max-w-5xl w-full mx-auto px-8">
                     <div className="flex flex-col items-center gap-1">
                         {/* Crest Image */}
-                        <div className="relative w-48 h-64 md:w-75 md:h-66">
+                        <div className="relative w-48 h-64 md:w-80 md:h-80">
                             <Image
-                                src="/images/about/hofHP (1)-2.png"
+                                src="/images/about/hofHP (1)-1.png"
                                 alt="Crest"
                                 fill
                                 className="object-contain"
-                                style={{
-                                    filter: 'sepia(100%) saturate(30%) hue-rotate(5deg) brightness(1.1) contrast(0.9)',
-                                }}
                                 priority
                             />
                         </div>
