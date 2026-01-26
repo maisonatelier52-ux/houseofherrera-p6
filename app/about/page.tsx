@@ -3,26 +3,14 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 export default function About() {
     return (
         <div className="w-full bg-white snap-y snap-mandatory h-screen overflow-y-auto scroll-smooth flex flex-col gap-32">
 
-            {/* Navigation - Fixed to stay on top across sections */}
-            <div className="fixed top-0 left-0 w-full z-50">
-                <div className="max-w-5xl w-full mx-auto px-8">
-                    <div className="w-full flex items-center justify-end gap-4 text-[9px] tracking-[0.2em] text-[#B5A691]/60 font-medium uppercase pt-8 font-din">
-                        <span className="cursor-pointer hover:text-[#B5A691] transition-colors">THE HOUSE OF HERRERA</span>
-                        <span className="text-[#B5A691]/60">|</span>
-                        <span className="cursor-pointer transition-colors">MENU</span>
-                        <div className="flex gap-1">
-                            <div className="w-1 h-1 bg-[#B5A691]/60 rounded-full"></div>
-                            <div className="w-1 h-1 bg-[#B5A691]/60 rounded-full"></div>
-                            <div className="w-1 h-1 bg-[#B5A691]/60 rounded-full"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {/* Navigation */}
+            <Navbar />
 
             {/* Section 1: Hero */}
             <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative">
@@ -172,7 +160,7 @@ export default function About() {
                     </nav>
 
                     {/* Connect Section */}
-                   
+
                     <div className="flex flex-col items-center gap-0 z-10">
                         <span className="text-[9px] tracking-[0.2em] text-[#B5A691] font-light font-din opacity-80">CONNECT WITH US</span>
 
