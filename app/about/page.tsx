@@ -99,7 +99,7 @@ export default function About() {
                 <div className="max-w-2xl w-full mx-auto px-8 flex flex-col">
 
                     {/* Small Crest */}
-                    <div className="relative w-24 h-24 mb-6">
+                    <div className="relative w-62 h-62 -mb-6 pl-54 md:pl-84">
                         <Image
                             src="/images/about/hofHP (1)-1.png"
                             alt="Crest"
@@ -139,8 +139,14 @@ export default function About() {
                         <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors">ORDERS & DISTINCTIONS</span>
                         <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors">BIBLIOGRAPHY</span>
                     </nav>
-                </div>
 
+                    {/* Bottom Chevron icon */}
+                    <div className="mt-16 flex justify-end text-[#B5A691]/50 opacity-50">
+                        <svg width="40" height="80" viewBox="0 0 20 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L18 20L2 38" stroke="currentColor" strokeWidth="3" />
+                        </svg>
+                    </div>
+                </div>
             </section>
 
         </div>
