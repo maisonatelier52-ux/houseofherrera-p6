@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <div className="w-full bg-white snap-y snap-mandatory h-screen overflow-y-auto scroll-smooth">
+        <div className="w-full bg-white snap-y snap-mandatory h-screen overflow-y-auto scroll-smooth flex flex-col gap-32">
 
             {/* Navigation - Fixed to stay on top across sections */}
             <div className="fixed top-0 left-0 w-full z-50">
@@ -146,6 +146,53 @@ export default function About() {
                             <path d="M2 2L18 20L2 38" stroke="currentColor" strokeWidth="3" />
                         </svg>
                     </div>
+                </div>
+            </section>
+
+            {/* Section 4: Contact & Footer */}
+            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative bg-white overflow-hidden">
+                <div className="max-w-6xl w-full mx-auto px-8 flex flex-col items-center flex-grow justify-center relative">
+
+                    {/* Background Style Large Title */}
+                    <div className="mb-15 text-center select-none pointer-events-none">
+                        <h2 className="text-[6rem] md:text-[11rem] font-libre text-[#EAE6E1] leading-[0.85] tracking-tight">
+                            House of<br />
+                            Herrera
+                        </h2>
+                    </div>
+
+                    {/* Secondary Navigation */}
+                    <nav className="flex flex-wrap items-center justify-center gap-x-18 gap-y-6 text-[10px] tracking-[0.1em] text-[#B5A691]/80 font-extralight mb-18 font-din z-10 w-full max-w-5xl">
+                        <span className="cursor-pointer hover:text-black transition-colors">About</span>
+                        <span className="cursor-pointer hover:text-black transition-colors">Dynasty</span>
+                        <span className="cursor-pointer hover:text-black transition-colors">Symbols of the House</span>
+                        <span className="cursor-pointer hover:text-black transition-colors">Family Estates</span>
+                        <span className="cursor-pointer hover:text-black transition-colors">Orders and Distinctions</span>
+                        <span className="cursor-pointer hover:text-black transition-colors">Bibliography</span>
+                    </nav>
+
+                    {/* Connect Section */}
+                   
+                    <div className="flex flex-col items-center gap-0 z-10">
+                        <span className="text-[9px] tracking-[0.2em] text-[#B5A691] font-light font-din opacity-80">CONNECT WITH US</span>
+
+                        <div className="relative w-50 h-50">
+                            <Image
+                                src="/images/about/hofHP (1)-1.png"
+                                alt="Crest"
+                                fill
+                                className="object-contain"
+                                priority
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                {/* Absolute Bottom Footer Text */}
+                <div className="absolute bottom-8 text-center w-full">
+                    <p className="text-[9px] tracking-[0.25em] text-[#B5A691]/80 font-light uppercase font-din">
+                        THE OFFICIAL WEBSITE OF THE HOUSE OF HERRERA
+                    </p>
                 </div>
             </section>
 
