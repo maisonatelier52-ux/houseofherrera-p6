@@ -17,10 +17,15 @@
   --font-inter: var(--font-inter);
   --font-libre: var(--font-libre);
   --font-helvetica: 'helvetica-w01-light', 'helvetica-w02-light', sans-serif;
+  --font-din: 'din-next-w01-light', 'din-next-w02-light', 'din-next-w10-light', sans-serif;
 }
 
 .font-helvetica {
   font-family: var(--font-helvetica);
+}
+
+.font-din {
+  font-family: var(--font-din);
 }
 
 

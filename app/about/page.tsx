@@ -11,10 +11,10 @@ export default function About() {
             {/* Navigation - Fixed to stay on top across sections */}
             <div className="fixed top-0 left-0 w-full z-50">
                 <div className="max-w-5xl w-full mx-auto px-8">
-                    <div className="w-full flex items-center justify-end gap-4 text-[9px] tracking-[0.2em] text-[#B5A691]/60 font-medium uppercase pt-8">
-                        <span style={{ fontFamily: 'din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif' }}>THE HOUSE OF HERRERA</span>
+                    <div className="w-full flex items-center justify-end gap-4 text-[9px] tracking-[0.2em] text-[#B5A691]/60 font-medium uppercase pt-8 font-din">
+                        <span className="cursor-pointer hover:text-[#B5A691] transition-colors">THE HOUSE OF HERRERA</span>
                         <span className="text-[#B5A691]/60">|</span>
-                        <span className="cursor-pointer transition-colors" style={{ fontFamily: 'din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif' }}>MENU</span>
+                        <span className="cursor-pointer transition-colors">MENU</span>
                         <div className="flex gap-1">
                             <div className="w-1 h-1 bg-[#B5A691]/60 rounded-full"></div>
                             <div className="w-1 h-1 bg-[#B5A691]/60 rounded-full"></div>
@@ -70,7 +70,7 @@ export default function About() {
 
                     {/* Description Text */}
                     <div className="max-w-3xl mb-6 mt-8">
-                        <p className="text-[13px] font-helvetica font-extralight tracking-tighter text-[#B5A691] text-left opacity-90">
+                        <p className="text-[13px] font-helvetica font-extralight tracking-tighter text-[#B5A691]/80 text-left">
                             The Herrera Family is a longstanding patrimony of Spanish nobility that gained prominence in the 14th century.
                             The family is notably distinguished as landowners, lords, conquerors, merchants and later, bankers with
                             unbound influence in Spain, the Canaries, Latin America, Germany and England. The House of Herrera was
@@ -79,17 +79,17 @@ export default function About() {
                     </div>
 
                     {/* Sub Navigation */}
-                    <nav className="flex items-center justify-center gap-12 text-[9px] tracking-[0.2em] text-[#B5A691] font-medium uppercase border-t border-[#B5A691]/80 pt-8 w-full max-w-2xl mt-4">
-                        <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors" style={{ fontFamily: 'din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif' }}>FAMILY HISTORY</span>
-                        <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors" style={{ fontFamily: 'din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif' }}>SYMBOLS OF THE HOUSE</span>
-                        <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors" style={{ fontFamily: 'din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif' }}>FAMOUS ESTATES</span>
+                    <nav className="flex items-center justify-center gap-18 text-[12px] tracking-[0.2em] text-[#B5A691] font-extralight uppercase border-t border-[#B5A691]/80 pt-4 w-full max-w-2xl mt-4 font-din">
+                        <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors">FAMILY HISTORY</span>
+                        <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors">SYMBOLS OF THE HOUSE</span>
+                        <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors">FAMOUS ESTATES</span>
                     </nav>
                 </div>
 
                 {/* Bottom Chevron icon */}
-                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#B5A691] opacity-50">
-                    <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 2L20 18L38 2" stroke="currentColor" strokeWidth="1" />
+                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#B5A691]/50 opacity-50">
+                    <svg width="80" height="40" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2L20 18L38 2" stroke="currentColor" strokeWidth="3" />
                     </svg>
                 </div>
             </section>
