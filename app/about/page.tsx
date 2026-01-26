@@ -94,6 +94,55 @@ export default function About() {
                 </div>
             </section>
 
+            {/* Section 3: House of Herrera (Acts of Bravery) */}
+            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative bg-white">
+                <div className="max-w-2xl w-full mx-auto px-8 flex flex-col">
+
+                    {/* Small Crest */}
+                    <div className="relative w-24 h-24 mb-6">
+                        <Image
+                            src="/images/about/hofHP (1)-1.png"
+                            alt="Crest"
+                            fill
+                            className="object-contain"
+                            priority
+                        />
+                    </div>
+
+                    {/* Header Title */}
+                    <div className="mb-10">
+                        <h2 className="text-[4rem] md:text-[7rem] font-libre text-[#B5A691] leading-[0.8] tracking-tighter">
+                            <span className="font-light block mb-2">House of</span>
+                            <span className="font-medium block">Herrera</span>
+                        </h2>
+                    </div>
+
+                    {/* Description Text Blocks */}
+                    <div className="space-y-6 mb-12">
+                        <p className="text-[13px] font-helvetica font-extralight tracking-tight text-[#B5A691]/80  leading-relaxed">
+                            The Herrera family has been known since the 14th century mainly for acts of bravery that have
+                            earned them titles and conquests over the generations. The family has exerted a strong military
+                            and political influence, and is imbued with traditions and values that endure today. Over the course
+                            of seven centuries, the Herrera family has played a key role in the development of finance,
+                            commerce and fashion in Spain, North and Latin America, and more recently in the UK and beyond.
+                        </p>
+                        <p className="text-[13px] font-helvetica font-extralight tracking-tight text-[#B5A691]/80 leading-relaxed">
+                            The Herrera family has had a pivotal influence on Latin American and Caribbean history and has
+                            especially influenced the Latin American Banking & Real Estate industry since 14th century with the
+                            founding of Hacienda La Vega (1590) and in the late 19th century (1890) with the founding of
+                            Banco Caracas by Julio César Velutini Couturier, who chaired Banco Caracas until 1930.
+                        </p>
+                    </div>
+
+                    {/* Sub Navigation */}
+                    <nav className="flex items-center justify-center gap-74 text-[12px] tracking-[0.2em] text-[#B5A691] font-extralight uppercase border-t border-[#B5A691]/80 pt-4 w-full max-w-2xl font-din">
+                        <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors">ORDERS & DISTINCTIONS</span>
+                        <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors">BIBLIOGRAPHY</span>
+                    </nav>
+                </div>
+
+            </section>
+
         </div>
     );
 }
