@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <div className="w-full bg-white snap-y snap-mandatory h-screen overflow-y-auto scroll-smooth flex flex-col gap-32">
+        <div className="w-full bg-black snap-y snap-mandatory h-screen overflow-y-auto scroll-smooth flex flex-col gap-32">
 
             {/* Section 1: Hero */}
             <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative">
@@ -41,7 +41,7 @@ export default function About() {
             </section>
 
             {/* Section 2: The Dynasty */}
-            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative bg-white">
+            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative ">
                 <div className="max-w-2xl w-full mx-auto px-8 text-left flex flex-col ">
 
                     {/* Header Title */}
@@ -79,7 +79,7 @@ export default function About() {
             </section>
 
             {/* Section 3: House of Herrera (Acts of Bravery) */}
-            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative bg-white">
+            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative">
                 <div className="max-w-2xl w-full mx-auto px-8 flex flex-col">
 
                     {/* Small Crest */}
@@ -134,25 +134,25 @@ export default function About() {
             </section>
 
             {/* Section 4: Contact & Footer */}
-            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative bg-white overflow-hidden">
+            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative overflow-hidden">
                 <div className="max-w-6xl w-full mx-auto px-8 flex flex-col items-center flex-grow justify-center relative">
 
                     {/* Background Style Large Title */}
                     <div className="mb-15 text-center select-none pointer-events-none">
-                        <h2 className="text-[6rem] md:text-[11rem] font-libre text-[#EAE6E1] leading-[0.85] tracking-tight">
+                        <h2 className="text-[6rem] md:text-[11rem] font-libre text-[#B5A691]/50 leading-[0.85] tracking-tight">
                             House of<br />
                             Herrera
                         </h2>
                     </div>
 
                     {/* Secondary Navigation */}
-                    <nav className="flex flex-wrap items-center justify-center gap-x-18 gap-y-6 text-[10px] tracking-[0.1em] text-[#B5A691]/80 font-extralight mb-18 font-din z-10 w-full max-w-5xl">
-                        <span className="cursor-pointer hover:text-black transition-colors">About</span>
-                        <span className="cursor-pointer hover:text-black transition-colors">Dynasty</span>
-                        <span className="cursor-pointer hover:text-black transition-colors">Symbols of the House</span>
-                        <span className="cursor-pointer hover:text-black transition-colors">Family Estates</span>
-                        <span className="cursor-pointer hover:text-black transition-colors">Orders and Distinctions</span>
-                        <span className="cursor-pointer hover:text-black transition-colors">Bibliography</span>
+                    <nav className="flex flex-wrap items-center justify-center gap-x-18 gap-y-6 text-[10px] tracking-[0.1em] text-[#B5A691]/70 font-extralight mb-18 font-din z-10 w-full max-w-5xl">
+                        <span className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">About</span>
+                        <span className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Dynasty</span>
+                        <span className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Symbols of the House</span>
+                        <span className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Family Estates</span>
+                        <span className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Orders and Distinctions</span>
+                        <span className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Bibliography</span>
                     </nav>
 
                     {/* Connect Section */}
