@@ -12,29 +12,19 @@ export default function PageTransition({
     const isAboutPage = pathname === "/about";
 
     return (
-        <AnimatePresence mode="wait" initial={false}>
+        <AnimatePresence mode="popLayout" initial={false}>
             <motion.div
                 key={pathname}
-                className="w-full h-full"
+                initial={{ x: isAboutPage ? "100%" : "-100%" }}
+                animate={{ x: 0 }}
+                exit={{ x: isAboutPage ? "100%" : "-100%" }}
+                transition={{
+                    duration: 0.8,
+                    ease: [0.22, 1, 0.36, 1]
+                }}
+                className="w-full min-h-screen overflow-hidden"
             >
-                {/* Page Content Slide */}
-                <motion.div
-                    initial={{ x: isAboutPage ? "100%" : "-20%", opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    exit={{ x: isAboutPage ? "-20%" : "100%", opacity: 0 }}
-                    transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-                    className="w-full h-full"
-                >
-                    {children}
-                </motion.div>
-
-                {/* White Overlay Curtain - Higher Z-index */}
-                <motion.div
-                    className="fixed inset-0 bg-white z-50 pointer-events-none"
-                    initial={{ scaleX: 0, originX: isAboutPage ? 0 : 1 }}
-                    animate={{ scaleX: 0, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.1 } }}
-                    exit={{ scaleX: 1, originX: isAboutPage ? 1 : 0, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } }}
-                />
+                {children}
             </motion.div>
         </AnimatePresence>
     );

@@ -40,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${libreBaskerville.variable} relative z-10 w-full`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${libreBaskerville.variable} relative z-10 w-full min-h-screen`}
       >
         {/* Content Layer */}
         <PageTransition>{children}</PageTransition>

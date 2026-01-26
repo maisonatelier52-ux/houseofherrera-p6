@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="w-full min-h-screen flex justify-center ">
       <div className="max-w-4xl w-full mx-auto ">
-        <div className=" flex flex-col justify-between relative mt-35">
+        <div className="flex flex-col justify-between relative mt-36">
 
           {/* Background Elements */}
           <div className="fixed inset-0 z-[-1]">
