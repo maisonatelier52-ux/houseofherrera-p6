@@ -26,6 +26,7 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 import PageTransition from "./components/PageTransition";
+import Navbar from "./components/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -42,6 +43,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${libreBaskerville.variable} relative z-10 w-full min-h-screen`}
       >
+        <Navbar />
         {/* Content Layer */}
         <PageTransition>{children}</PageTransition>
       </body>
