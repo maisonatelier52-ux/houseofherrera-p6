@@ -83,7 +83,7 @@ export default function About() {
                 <div className="max-w-2xl w-full mx-auto px-8 flex flex-col">
 
                     {/* Small Crest */}
-                    <div className="relative w-62 h-62 -mb-6 pl-54 md:pl-84">
+                    <div className="relative w-62 h-62 md:-mb-10 -mb-6 pl-54 md:pl-84">
                         <Image
                             src="/images/about/hofHP (1)-1.png"
                             alt="Crest"
@@ -102,7 +102,7 @@ export default function About() {
                     </div>
 
                     {/* Description Text Blocks */}
-                    <div className="space-y-6 mb-12">
+                    <div className="space-y-6 mb-8">
                         <p className="text-[13px] font-helvetica font-extralight tracking-tight text-[#B5A691]/80  leading-relaxed">
                             The Herrera family has been known since the 14th century mainly for acts of bravery that have
                             earned them titles and conquests over the generations. The family has exerted a strong military
@@ -119,13 +119,13 @@ export default function About() {
                     </div>
 
                     {/* Sub Navigation */}
-                    <nav className="flex items-center justify-center gap-74 text-[12px] tracking-[0.2em] text-[#B5A691] font-extralight uppercase border-t border-[#B5A691]/80 pt-4 w-full max-w-2xl font-din">
+                    <nav className="flex items-center justify-center md:gap-74 gap-6 text-[12px] tracking-[0.2em] text-[#B5A691] font-extralight uppercase border-t border-[#B5A691]/80 pt-4 w-full max-w-2xl font-din">
                         <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors">ORDERS & DISTINCTIONS</span>
                         <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors">BIBLIOGRAPHY</span>
                     </nav>
 
                     {/* Bottom Chevron icon */}
-                    <div className="mt-16 flex justify-end text-[#B5A691]/50 opacity-50">
+                    <div className="mt-8 mb-16 flex justify-end text-[#B5A691]/50 opacity-50">
                         <svg width="40" height="80" viewBox="0 0 20 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 2L18 20L2 38" stroke="currentColor" strokeWidth="3" />
                         </svg>
