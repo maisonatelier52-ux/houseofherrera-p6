@@ -15,9 +15,9 @@ const menuItems = [
 
 export default function Home() {
   return (
-    <div className="w-full h-[80vh] flex items-center justify-center ">
+    <div className="w-full min-h-screen flex justify-center ">
       <div className="max-w-4xl w-full mx-auto ">
-        <div className=" flex flex-col justify-between relative mt-30">
+        <div className=" flex flex-col justify-between relative mt-35">
 
           {/* Background Elements */}
           <div className="fixed inset-0 z-[-1]">
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
 
           {/* Bottom Right Watermark */}
-          <div className="flex justify-end">
+          <div className="flex justify-end mt-12">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
