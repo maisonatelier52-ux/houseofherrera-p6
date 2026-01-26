@@ -16,6 +16,11 @@
   --font-sans: var(--font-sans);
   --font-inter: var(--font-inter);
   --font-libre: var(--font-libre);
+  --font-helvetica: 'helvetica-w01-light', 'helvetica-w02-light', sans-serif;
+}
+
+.font-helvetica {
+  font-family: var(--font-helvetica);
 }
 
 

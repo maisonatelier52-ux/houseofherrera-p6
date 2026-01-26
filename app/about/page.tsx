@@ -6,26 +6,26 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <div className="min-h-screen w-full flex flex-col bg-white">
-            {/* Navigation Container - max-w-5xl */}
-            <div className="w-full">
+        <div className="w-full bg-white snap-y snap-mandatory h-screen overflow-y-auto scroll-smooth">
+
+            {/* Navigation - Fixed to stay on top across sections */}
+            <div className="fixed top-0 left-0 w-full z-50">
                 <div className="max-w-5xl w-full mx-auto px-8">
-                    {/* Top Navigation */}
-                    <div className="w-full flex items-center justify-end gap-4 text-[9px] tracking-[0.2em] text-[#B5A691] font-medium uppercase pt-8">
+                    <div className="w-full flex items-center justify-end gap-4 text-[9px] tracking-[0.2em] text-[#B5A691]/60 font-medium uppercase pt-8">
                         <span style={{ fontFamily: 'din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif' }}>THE HOUSE OF HERRERA</span>
-                        <span className="text- #B5A691">|</span>
+                        <span className="text-[#B5A691]/60">|</span>
                         <span className="cursor-pointer transition-colors" style={{ fontFamily: 'din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif' }}>MENU</span>
                         <div className="flex gap-1">
-                            <div className="w-1 h-1 bg-[#B5A691] rounded-full"></div>
-                            <div className="w-1 h-1 bg-[#B5A691] rounded-full"></div>
-                            <div className="w-1 h-1 bg-[#B5A691] rounded-full"></div>
+                            <div className="w-1 h-1 bg-[#B5A691]/60 rounded-full"></div>
+                            <div className="w-1 h-1 bg-[#B5A691]/60 rounded-full"></div>
+                            <div className="w-1 h-1 bg-[#B5A691]/60 rounded-full"></div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Main Content - Centered - max-w-5xl */}
-            <div className="flex-grow flex items-center justify-center">
+            {/* Section 1: Hero */}
+            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative">
                 <div className="max-w-5xl w-full mx-auto px-8">
                     <div className="flex flex-col items-center gap-1">
                         {/* Crest Image */}
@@ -47,7 +47,53 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-            </div>
+
+                {/* Scroll Indicator */}
+                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#B5A691] opacity-50">
+                    <svg width="30" height="15" viewBox="0 0 30 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L15 13L29 1" stroke="currentColor" strokeWidth="1" />
+                    </svg>
+                </div>
+            </section>
+
+            {/* Section 2: The Dynasty */}
+            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative bg-white">
+                <div className="max-w-2xl w-full mx-auto px-8 text-left flex flex-col ">
+
+                    {/* Header Title */}
+                    <div className="mb-8">
+                        <h2 className="text-[5rem] md:text-[7rem] font-libre text-[#B5A691] leading-[0.7] tracking-tighter text-left">
+                            <span className=" font-light block  mb-5 scale-y-110">The</span>
+                            <span className=" -tracking-[0.05em] block">Dynasty</span>
+                        </h2>
+                    </div>
+
+                    {/* Description Text */}
+                    <div className="max-w-3xl mb-6 mt-8">
+                        <p className="text-[13px] font-helvetica font-extralight tracking-tighter text-[#B5A691] text-left opacity-90">
+                            The Herrera Family is a longstanding patrimony of Spanish nobility that gained prominence in the 14th century.
+                            The family is notably distinguished as landowners, lords, conquerors, merchants and later, bankers with
+                            unbound influence in Spain, the Canaries, Latin America, Germany and England. The House of Herrera was
+                            established as a deference to the trust and responsibilities warranted over centuries of partnerships.
+                        </p>
+                    </div>
+
+                    {/* Sub Navigation */}
+                    <nav className="flex items-center justify-center gap-12 text-[9px] tracking-[0.2em] text-[#B5A691] font-medium uppercase border-t border-[#B5A691]/80 pt-8 w-full max-w-2xl mt-4">
+                        <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors" style={{ fontFamily: 'din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif' }}>FAMILY HISTORY</span>
+                        <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors" style={{ fontFamily: 'din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif' }}>SYMBOLS OF THE HOUSE</span>
+                        <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors" style={{ fontFamily: 'din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif' }}>FAMOUS ESTATES</span>
+                    </nav>
+                </div>
+
+                {/* Bottom Chevron icon */}
+                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#B5A691] opacity-50">
+                    <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2L20 18L38 2" stroke="currentColor" strokeWidth="1" />
+                    </svg>
+                </div>
+            </section>
+
         </div>
     );
 }
