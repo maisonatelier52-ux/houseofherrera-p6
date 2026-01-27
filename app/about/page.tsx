@@ -126,11 +126,11 @@ export default function About() {
                     </nav>
 
                     {/* Bottom Chevron icon */}
-                    <div className="mt-8 mb-16 flex justify-end text-[#B5A691]/50 opacity-50">
+                    <Link href="/dynasty" className="mt-8 mb-16 flex justify-end text-[#B5A691]/50 opacity-50 hover:opacity-100 hover:text-[#B5A691] transition-all cursor-pointer">
                         <svg width="40" height="80" viewBox="0 0 20 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 2L18 20L2 38" stroke="currentColor" strokeWidth="3" />
                         </svg>
-                    </div>
+                    </Link>
                 </div>
             </section>
 
@@ -148,12 +148,12 @@ export default function About() {
 
                     {/* Secondary Navigation */}
                     <nav className="flex flex-wrap items-center justify-center gap-x-18 gap-y-6 text-[10px] tracking-[0.1em] text-[#B5A691]/70 font-extralight mb-18 font-din z-10 w-full max-w-5xl">
-                        <span className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">About</span>
-                        <span className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Dynasty</span>
-                        <span className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Symbols of the House</span>
-                        <span className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Family Estates</span>
-                        <span className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Orders and Distinctions</span>
-                        <span className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Bibliography</span>
+                        <Link href="/about" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">About</Link>
+                        <Link href="/dynasty" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Dynasty</Link>
+                        <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Symbols of the House</Link>
+                        <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Family Estates</Link>
+                        <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Orders and Distinctions</Link>
+                        <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Bibliography</Link>
                     </nav>
 
                     {/* Connect Section */}

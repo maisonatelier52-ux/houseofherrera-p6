@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const menuItems = [
   { label: "ABOUT", id: "about", href: "/about" },
-  { label: "HERRERA\nDYNASTY", id: "dynasty", href: "#dynasty" },
+  { label: "HERRERA\nDYNASTY", id: "dynasty", href: "/dynasty" },
   { label: "ORDERS &\nDISTINCTIONS", id: "orders", href: "#orders" },
   { label: "SYMBOLS\nOF THE HOUSE", id: "symbols", href: "#symbols" },
   { label: "FAMILY ESTATES", id: "estates", href: "#estates" },
