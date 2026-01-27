@@ -33,10 +33,10 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                     {/* Background Image Overlay */}
                     <div className="absolute inset-0 z-0 ">
                         <Image
-                            src="/images/about/fac1d5_fbf98aa49290418bbd98be916a433ab2~mv2 (1).avif"
+                            src="/images/about/image (2).png"
                             alt="Menu Background"
                             fill
-                            className="object-cover opacity-20 scale-100 transition-transform duration-700"
+                            className="object-cover grayscale brightness-[0.5] scale-100 transition-transform duration-700"
                             priority
                         />
                     </div>
@@ -52,7 +52,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                                 ease: [0.22, 1, 0.36, 1]
                             }}
                         >
-                            <h2 className="text-[7rem] md:text-[9rem] font-libre text-[#5c5954ff]/30 leading-[0.8] tracking-tighter">
+                            <h2 className="text-[7rem] md:text-[9rem] font-libre text-[#e1ddd8ff]/60 leading-[0.8] tracking-tighter">
                                 House of<br />
                                 Herrera
                             </h2>
@@ -81,7 +81,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                                         <Link
                                             href={item.href}
                                             onClick={onClose}
-                                            className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.2em] md:tracking-wider text-[0.55rem] md:text-[0.60rem] font-light text-[#757370ff] hover:text-[#B5A691] text-center md:text-left"
+                                            className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.2em] md:tracking-wider text-[0.55rem] md:text-[0.60rem] font-light text-[#8f8c89ff] hover:text-[#B5A691] text-center md:text-left"
                                         >
                                             {item.label}
                                         </Link>
@@ -100,7 +100,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                                     src="/images/about/hofHP (1)-2.png"
                                     alt="Family Crest"
                                     fill
-                                    className="object-contain grayscale brightness-[0.3]"
+                                    className="object-contain grayscale brightness-[1.3]"
                                     priority
                                 />
                             </div>
