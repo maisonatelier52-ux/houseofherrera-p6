@@ -107,8 +107,8 @@ export default function Dynasty() {
                         {/* Person Title */}
                         <div className="text-center mb-8">
                             <h2 className="text-[3.5rem] md:text-[2.5rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light opacity-90">
-                                Hernan De Herrera<br />
-                                Lord of Ampudia I
+                               Jose Herrera<br />
+                               Von Uslar Gleichen
                             </h2>
                         </div>
 
@@ -124,8 +124,8 @@ export default function Dynasty() {
                         <div className="space-y-1">
                             <span className="text-[10px] tracking-[0.2em] text-[#B5A691] font-bold font-din uppercase block">ABOUT</span>
                             <span className="text-[10px] tracking-[0.15em] text-[#B5A691]/70 font-light font-din uppercase leading-relaxed block max-w-[180px]">
-                                HERNAN DE HERRERA<br />
-                                LORD OF AMPUDIA I
+                                JOSE HERRERA<br />
+                                VON USLAR GLEICHEN
                             </span>
                         </div>
                     </div>

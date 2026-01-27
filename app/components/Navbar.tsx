@@ -22,7 +22,7 @@ export default function Navbar() {
                                 // Removing 'initial' and using 'animate' with array ensures the looping animation 
                                 // starts immediately even if the parent has initial={false}
                                 animate={{
-                                    scale: [1, 2, 1],
+                                    scale: [2, 3, 2],
                                     opacity: [0.6, 1, 0.6],
                                 }}
                                 transition={{
