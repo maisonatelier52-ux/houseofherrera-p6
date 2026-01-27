@@ -34,7 +34,7 @@ export default function About() {
                 </div>
 
                 {/* Scroll Indicator */}
-                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#B5A691] opacity-50">
+                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#B5A691]/50 opacity-50">
                     <svg width="30" height="15" viewBox="0 0 30 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L15 13L29 1" stroke="currentColor" strokeWidth="1" />
                     </svg>
