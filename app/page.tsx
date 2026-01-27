@@ -15,9 +15,9 @@ const menuItems = [
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen flex justify-center ">
-      <div className="max-w-4xl w-full mx-auto ">
-        <div className="flex flex-col justify-between relative mt-36">
+    <div className="w-full min-h-screen flex justify-center overflow-x-hidden">
+      <div className="max-w-4xl w-full mx-auto px-6">
+        <div className="flex flex-col justify-between relative mt-20 md:mt-36">
 
           {/* Background Elements */}
           <div className="fixed inset-0 z-[-1]">
@@ -44,36 +44,36 @@ export default function Home() {
               }}
             />
           </div>
-          {/* Top Section - Empty or Spacer */}
-          <div className="flex-grow flex items-center">
-            {/* Vertical Nav - Left Aligned */}
-            <nav className="flex flex-col gap-2">
+          {/* Top Section - Spacer */}
+          <div className="flex-grow flex items-center justify-center md:justify-start">
+            {/* Vertical Nav */}
+            <nav className="flex flex-col items-center md:items-start gap-2">
               {menuItems.map((item, index) => (
                 <motion.div
                   key={item.id}
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 1.2, delay: 0.2 + index * 0.1 }}
-                  className="flex flex-col gap-3"
+                  className="flex flex-col items-center md:items-start gap-3"
                 >
                   {item.id === "about" ? (
                     <Link
                       href={item.href}
-                      className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-wider text-[0.60rem] font-light text-black/60 hover:text-black text-center"
+                      className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.2em] md:tracking-wider text-[0.55rem] md:text-[0.60rem] font-light text-black/60 hover:text-black text-center md:text-left"
                     >
                       {item.label}
                     </Link>
                   ) : (
                     <a
                       href={item.href}
-                      className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-wider text-[0.60rem] font-light text-black/60 hover:text-black text-center"
+                      className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.2em] md:tracking-wider text-[0.55rem] md:text-[0.60rem] font-light text-black/60 hover:text-black text-center md:text-left"
                     >
                       {item.label}
                     </a>
                   )}
                   {index < menuItems.length - 1 && (
                     <div
-                      className="w-[88px] h-[1px] my-[1.5rem] bg-[repeating-linear-gradient(90deg,rgba(0,0,0,0.76)_1px,rgba(0,0,0,0.76)_1px,transparent_4px,transparent_5px)]"
+                      className="w-16 md:w-[88px] h-[1px] my-4 md:my-[1.5rem] bg-[repeating-linear-gradient(90deg,rgba(0,0,0,0.76)_1px,rgba(0,0,0,0.76)_1px,transparent_4px,transparent_5px)]"
                     />
                   )}
                 </motion.div>
@@ -82,14 +82,14 @@ export default function Home() {
           </div>
 
           {/* Bottom Right Watermark */}
-          <div className="flex justify-end mt-12">
+          <div className="flex justify-center md:justify-end mt-12 mb-8">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5, delay: 1 }}
             >
               <p
-                className="text-[9px] tracking-[0.1em] text-black/50 font-light uppercase font-din"
+                className="text-[8px] md:text-[9px] tracking-[0.1em] text-black/50 font-light uppercase font-din"
               >
                 ©2025 HOUSE OF HERRERA
               </p>

@@ -113,34 +113,33 @@ export default function JoseHerreraPage() {
                 </div>
             </section>
 
-            {/* Section 3: Contact & Footer */}
-            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative overflow-hidden">
+            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative overflow-hidden px-4">
                 <div className="max-w-6xl w-full mx-auto px-8 flex flex-col items-center flex-grow justify-center relative">
 
                     {/* Background Style Large Title */}
-                    <div className="mb-15 text-center select-none pointer-events-none">
-                        <h2 className="text-[6rem] md:text-[11rem] font-libre text-[#B5A691]/50 leading-[0.85] tracking-tight">
+                    <div className="mb-10 md:mb-15 text-center select-none pointer-events-none">
+                        <h2 className="text-[3.5rem] md:text-[11rem] font-libre text-[#B5A691]/50 leading-[0.85] tracking-tight">
                             House of<br />
                             Herrera
                         </h2>
                     </div>
 
                     {/* Secondary Navigation */}
-                    <nav className="flex flex-wrap items-center justify-center gap-x-18 gap-y-6 text-[10px] tracking-[0.1em] text-[#B5A691]/70 font-extralight mb-14 font-din z-10 w-full max-w-5xl">
+                    <nav className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 md:gap-x-18 md:gap-y-6 text-[9px] md:text-[10px] tracking-[0.1em] text-[#B5A691]/70 font-extralight mb-12 md:mb-14 font-din z-10 w-full max-w-5xl">
                         <Link href="/about" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">About</Link>
                         <Link href="/dynasty" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Dynasty</Link>
-                        <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Symbols of the House</Link>
-                        <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Family Estates</Link>
-                        <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Orders and Distinctions</Link>
+                        <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Symbols of the House</Link>
+                        <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Family Estates</Link>
+                        <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Orders and Distinctions</Link>
                         <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Bibliography</Link>
                     </nav>
 
                     {/* Connect Section */}
 
                     <div className="flex flex-col items-center gap-0 z-10">
-                        <span className="text-[9px] tracking-[0.2em] text-[#B5A691] font-light font-din opacity-80">CONNECT WITH US</span>
+                        <span className="text-[8px] md:text-[9px] tracking-[0.2em] text-[#B5A691] font-light font-din opacity-80 uppercase">CONNECT WITH US</span>
 
-                        <div className="relative w-50 h-50">
+                        <div className="relative w-40 h-40 md:w-50 md:h-50">
                             <Image
                                 src="/images/about/hofHP (1)-1.png"
                                 alt="Crest"
@@ -153,8 +152,8 @@ export default function JoseHerreraPage() {
                 </div>
 
                 {/* Absolute Bottom Footer Text */}
-                <div className="absolute bottom-8 text-center w-full">
-                    <p className="text-[9px] tracking-[0.25em] text-[#B5A691]/80 font-light uppercase font-din">
+                <div className="absolute bottom-6 md:bottom-8 text-center w-full px-4">
+                    <p className="text-[7px] md:text-[9px] tracking-[0.2em] md:tracking-[0.25em] text-[#B5A691]/80 font-light uppercase font-din leading-relaxed">
                         THE OFFICIAL WEBSITE OF THE HOUSE OF HERRERA
                     </p>
                 </div>
