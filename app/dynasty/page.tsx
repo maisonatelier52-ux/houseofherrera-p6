@@ -133,7 +133,7 @@ export default function Dynasty() {
                     </div>
 
                     {/* Right Column: Sidebar Info (1/3 space) */}
-                    <Link href="/jose-herrera-von-uslar-gleichen" className="md:col-span-1 flex flex-col items-center md:items-start md:pl-16 pt-0 group cursor-pointer">
+                    <Link href="/jose-herrera-von-uslar-gleichen" className="md:col-span-1 flex flex-col items-center md:items-start md:pl-16 pt-18 group cursor-pointer">
                         <div className="space-y-1 text-center md:text-left">
                             <span className="text-[9px] md:text-[10px] tracking-[0.2em] text-[#B5A691] font-bold font-din uppercase block group-hover:text-[#B5A691]/80 transition-colors">ABOUT</span>
                             <span className="text-[9px] md:text-[10px] tracking-[0.15em] text-[#B5A691]/70 font-light font-din uppercase leading-relaxed block max-w-[180px] group-hover:text-[#B5A691] transition-colors">
@@ -142,6 +142,47 @@ export default function Dynasty() {
                             </span>
                         </div>
                     </Link>
+                </div>
+                
+
+                <div className="max-w-5xl w-full mx-auto md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-4 items-center mt-0">
+                    {/* Left Column: Title Content (2/3 space) */}
+                    <div className="md:col-span-2 flex flex-col items-center">
+                        {/* Decorative Item: image (1).png */}
+                        <div className="mb-6 relative w-58 h-38">
+                            <Image
+                                src="/images/about/image (1).png"
+                                alt="Column Divider"
+                                fill
+                                className="object-contain brightness-110 rotate-90"
+                            />
+                        </div>
+
+                        {/* Person Title */}
+                        <div className="text-center mb-8 mt-10">
+                            <h2 className="text-[2.5rem] md:text-[2.5rem] font-libre text-[#B5A691] leading-[1] tracking-tight font-light opacity-90">
+                                Pedro Garcia<br />
+                                De Herrera Y Rojas
+                            </h2>
+                        </div>
+
+                        {/* Bottom Line & Date */}
+                        <div className="w-full max-w-2xl flex flex-col items-center">
+                            <div className="w-full h-[0.5px] bg-[#B5A691]/40 mb-6" />
+                            <span className="text-[11px] tracking-[0.4em] text-[#B5A691] font-din uppercase opacity-70">1390 - 1455</span>
+                        </div>
+                    </div>
+
+                    {/* Right Column: Sidebar Info (1/3 space) */}
+                    <div className="md:col-span-1 flex flex-col items-center md:items-start md:pl-16 pt-46">
+                        <div className="space-y-1 text-center md:text-left">
+                            <span className="text-[10px] tracking-[0.2em] text-[#B5A691] font-bold font-din uppercase block">ABOUT</span>
+                            <span className="text-[10px] tracking-[0.15em] text-[#B5A691]/70 font-light font-din uppercase leading-relaxed block max-w-[180px]">
+                                PEDRO GARCIA<br />
+                                DE HERRERA Y ROJAS
+                            </span>
+                        </div>
+                    </div>
                 </div>
 
             </section>
