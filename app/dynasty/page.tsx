@@ -105,12 +105,12 @@ export default function Dynasty() {
                         </div>
 
                         {/* Person Title */}
-                        <div className="text-center mb-8">
-                            <h2 className="text-[3.5rem] md:text-[2.5rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light opacity-90">
+                        <Link href="/jose-herrera-von-uslar-gleichen" className="group text-center mb-8 block cursor-pointer">
+                            <h2 className="text-[3.5rem] md:text-[2.5rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light opacity-90 group-hover:opacity-100 transition-opacity">
                                 Jose Herrera<br />
                                 Von Uslar Gleichen
                             </h2>
-                        </div>
+                        </Link>
 
                         {/* Bottom Line & Date */}
                         <div className="w-full max-w-2xl flex flex-col items-center">
@@ -120,15 +120,15 @@ export default function Dynasty() {
                     </div>
 
                     {/* Right Column: Sidebar Info (1/3 space) */}
-                    <div className="md:col-span-1 flex flex-col items-start md:pl-16 pt-12 md:pt-0">
+                    <Link href="/jose-herrera-von-uslar-gleichen" className="md:col-span-1 flex flex-col items-start md:pl-16 pt-12 md:pt-0 group cursor-pointer">
                         <div className="space-y-1">
-                            <span className="text-[10px] tracking-[0.2em] text-[#B5A691] font-bold font-din uppercase block">ABOUT</span>
-                            <span className="text-[10px] tracking-[0.15em] text-[#B5A691]/70 font-light font-din uppercase leading-relaxed block max-w-[180px]">
+                            <span className="text-[10px] tracking-[0.2em] text-[#B5A691] font-bold font-din uppercase block group-hover:text-[#B5A691]/80 transition-colors">ABOUT</span>
+                            <span className="text-[10px] tracking-[0.15em] text-[#B5A691]/70 font-light font-din uppercase leading-relaxed block max-w-[180px] group-hover:text-[#B5A691] transition-colors">
                                 JOSE HERRERA<br />
                                 VON USLAR GLEICHEN
                             </span>
                         </div>
-                    </div>
+                    </Link>
                 </div>
 
             </section>
