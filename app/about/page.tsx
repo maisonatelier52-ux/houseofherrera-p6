@@ -3,11 +3,12 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 export default function About() {
     return (
         <div className="w-full bg-black snap-y snap-mandatory h-screen overflow-y-auto scroll-smooth flex flex-col gap-32">
-
+            <Navbar />
             {/* Section 1: Hero */}
             <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative">
                 <div className="max-w-5xl w-full mx-auto px-8">
