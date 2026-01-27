@@ -15,12 +15,25 @@ export default function PageTransition({
         <AnimatePresence mode="popLayout" initial={false}>
             <motion.div
                 key={pathname}
-                initial={{ x: isAboutPage ? "100%" : "-100%" }}
+                initial={{ x: "100%" }}
                 animate={{ x: 0 }}
-                exit={{ x: isAboutPage ? "100%" : "-100%" }}
+                exit={{ x: "-100%" }}
                 transition={{
                     duration: 0.8,
                     ease: [0.22, 1, 0.36, 1]
+                }}
+                onAnimationComplete={() => {
+                    // Logic for "extra flow": auto-scroll to the first content section after landing
+                    const scrollContainer = document.querySelector('.snap-y');
+                    if (scrollContainer) {
+                        // Small delay to ensure the page has settled
+                        setTimeout(() => {
+                            scrollContainer.scrollTo({
+                                top: window.innerHeight,
+                                behavior: 'smooth'
+                            });
+                        }, 200);
+                    }
                 }}
                 className="w-full min-h-screen overflow-hidden"
             >
