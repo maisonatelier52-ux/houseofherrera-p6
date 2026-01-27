@@ -30,7 +30,7 @@ export default function Dynasty() {
                                 src="/images/about/hofHP (1)-1.png"
                                 alt="Crest"
                                 fill
-                                className="object-contain"
+                                className="object-contain saturate-60"
                                 priority
                             />
                         </div>
@@ -96,7 +96,7 @@ export default function Dynasty() {
                                 src="/images/about/hofHP (1)-1.png"
                                 alt="Family Crest"
                                 fill
-                                className="object-contain"
+                                className="object-contain saturate-60"
                                 priority
                             />
                         </div>
@@ -154,7 +154,7 @@ export default function Dynasty() {
                                 src="/images/about/image (1).png"
                                 alt="Column Divider"
                                 fill
-                                className="object-contain brightness-110 rotate-90"
+                                className="object-contain brightness-60 rotate-90"
                             />
                         </div>
 

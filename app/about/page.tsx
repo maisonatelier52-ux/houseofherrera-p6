@@ -29,7 +29,7 @@ export default function About() {
                                 src="/images/about/hofHP (1)-1.png"
                                 alt="Crest"
                                 fill
-                                className="object-contain"
+                                className="object-contain saturate-60"
                                 priority
                             />
                         </div>
@@ -105,7 +105,7 @@ export default function About() {
                             src="/images/about/hofHP (1)-1.png"
                             alt="Crest"
                             fill
-                            className="object-contain"
+                            className="object-contain saturate-60"
                             priority
                         />
                     </div>
@@ -182,7 +182,7 @@ export default function About() {
                                 src="/images/about/hofHP (1)-1.png"
                                 alt="Crest"
                                 fill
-                                className="object-contain"
+                                className="object-contain saturate-60"
                                 priority
                             />
                         </div>
