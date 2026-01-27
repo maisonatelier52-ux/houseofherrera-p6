@@ -107,8 +107,8 @@ export default function Dynasty() {
                         {/* Person Title */}
                         <div className="text-center mb-8">
                             <h2 className="text-[3.5rem] md:text-[2.5rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light opacity-90">
-                               Jose Herrera<br />
-                               Von Uslar Gleichen
+                                Jose Herrera<br />
+                                Von Uslar Gleichen
                             </h2>
                         </div>
 
@@ -133,7 +133,7 @@ export default function Dynasty() {
 
             </section>
 
-             {/* Section 3: Contact & Footer */}
+            {/* Section 3: Contact & Footer */}
             <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative overflow-hidden">
                 <div className="max-w-6xl w-full mx-auto px-8 flex flex-col items-center flex-grow justify-center relative">
 
