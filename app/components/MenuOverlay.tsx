@@ -43,10 +43,20 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
 
                     {/* Left Side Watermark Text */}
                     <div className="hidden lg:flex flex-[1.5] items-center justify-center z-10 select-none pointer-events-none pl-20">
-                        <h2 className="text-[7rem] md:text-[9rem] font-libre text-[#5c5954ff]/30 leading-[0.8] tracking-tighter">
-                            House of<br />
-                            Herrera
-                        </h2>
+                        <motion.div
+                            initial={{ opacity: 0, y: 100 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 1.5,
+                                delay: 0.3,
+                                ease: [0.22, 1, 0.36, 1]
+                            }}
+                        >
+                            <h2 className="text-[7rem] md:text-[9rem] font-libre text-[#5c5954ff]/30 leading-[0.8] tracking-tighter">
+                                House of<br />
+                                Herrera
+                            </h2>
+                        </motion.div>
                     </div>
 
                     {/* Right Side Content Container */}
