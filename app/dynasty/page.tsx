@@ -43,7 +43,7 @@ export default function Dynasty() {
             </section>
 
             {/* Section 2: The Herrera Dynasty Content */}
-            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative bg-white overflow-hidden">
+            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative bg-black overflow-hidden">
 
                 <div className="max-w-5xl w-full mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
                     {/* Left Column: Text Content (Takes 2/3 space) */}
