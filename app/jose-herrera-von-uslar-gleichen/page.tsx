@@ -7,10 +7,10 @@ import Navbar from "../components/Navbar";
 
 export default function JoseHerreraPage() {
     return (
-        <div className="w-full bg-black min-h-screen flex flex-col overflow-y-auto relative">
+        <div className="w-full bg-black snap-y snap-mandatory h-screen overflow-y-auto scroll-smooth flex flex-col relative">
             <Navbar />
 
-            <main className="flex-grow flex flex-col items-center justify-center px-8 py-4 text-center">
+            <section className="w-full flex flex-col items-center snap-start relative bg-black pt-12 pb-22 gap-18 text-center px-8">
                 <div className="max-w-5xl w-full mx-auto flex flex-col items-center relative z-10">
 
                     {/* Family Crest */}
@@ -47,7 +47,7 @@ export default function JoseHerreraPage() {
                     </div>
 
                     {/* Description Content */}
-                    <div className="max-w-2xl space-y-2">
+                    <div className="max-w-2xl space-y-2 mb-18">
                         <p className="text-[12px] md:text-[13px] font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed">
                             Marquis of Lanzarote and Count of Palomar.
                         </p>
@@ -61,8 +61,19 @@ export default function JoseHerreraPage() {
                             by any means necessary.
                         </p>
                     </div>
+
+                      {/* Person Image */}
+                    <div className="relative w-64 h-80 md:w-72 md:h-96 mb-12 opacity-80">
+                        <Image
+                            src="/images/about/image 24.png"
+                            alt="Jose Herrera Portrait"
+                            fill
+                            className="object-contain"
+                            priority
+                        />
+                    </div>
                 </div>
-            </main>
+            </section>
         </div>
     );
 }
