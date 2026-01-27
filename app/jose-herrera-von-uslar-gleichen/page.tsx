@@ -62,7 +62,7 @@ export default function JoseHerreraPage() {
                         </p>
                     </div>
 
-                      {/* Person Image */}
+                    {/* Person Image */}
                     <div className="relative w-64 h-80 md:w-72 md:h-96 mb-12 opacity-80">
                         <Image
                             src="/images/about/image 24.png"
@@ -71,6 +71,44 @@ export default function JoseHerreraPage() {
                             className="object-contain"
                             priority
                         />
+                    </div>
+
+                    {/* Additional Images Row */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-4xl opacity-80 mb-12">
+                        <div className="relative aspect-[2/3] w-full">
+                            <Image
+                                src="/images/about/Herrera8.avif"
+                                alt="Herrera History 1"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+                        <div className="relative aspect-[2/3] w-full">
+                            <Image
+                                src="/images/about/Herrera10.avif"
+                                alt="Herrera History 2"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+                    </div>
+                    {/* Humanitarian Legacy Text */}
+                    <div className="max-w-2xl space-y-4 mt-4 mb-24">
+                        <p className="text-[12px] md:text-[13px] font-helvetica font-light tracking-tight text-[#B5A691]/80 leading-relaxed max-w-xl mx-auto">
+                            In 1950, Jose Herrera Von Uslar Gleichen advocated a strong movement<br />
+                            which oversaw the adoption of World War II orphans.
+                        </p>
+
+                        <p className="text-[12px] md:text-[13px] font-helvetica font-light tracking-tight text-[#B5A691]/80 leading-relaxed max-w-xl mx-auto">
+                            When he was Ambassador to Sweden, Herrera Uslar organised<br />
+                            the transfer of 1,000 orphaned war refugees in Switzerland.
+                        </p>
+
+                        <p className="text-[12px] md:text-[13px] font-helvetica font-light tracking-tight text-[#B5A691]/80 leading-relaxed max-w-xl mx-auto">
+                            The orphans arrived in Venezuela in batches of 50 children,<br />
+                            and were welcomed to the colony of Catia La Mar,<br />
+                            where they were adopted by Venezuelan families.
+                        </p>
                     </div>
                 </div>
             </section>
