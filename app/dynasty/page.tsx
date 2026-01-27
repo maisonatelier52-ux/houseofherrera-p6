@@ -6,6 +6,16 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 
 export default function Dynasty() {
+    const scrollToNext = () => {
+        const container = document.querySelector('.snap-y');
+        if (container) {
+            container.scrollBy({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     return (
         <div className="w-full bg-black snap-y snap-mandatory h-screen overflow-y-auto scroll-smooth flex flex-col gap-12 md:gap-32">
             <Navbar />
@@ -35,7 +45,10 @@ export default function Dynasty() {
                 </div>
 
                 {/* Scroll Indicator */}
-                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#B5A691]/50 opacity-50">
+                <div
+                    className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[#B5A691]/50 opacity-50 cursor-pointer hover:opacity-100 transition-opacity"
+                    onClick={scrollToNext}
+                >
                     <svg width="30" height="15" viewBox="0 0 30 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L15 13L29 1" stroke="currentColor" strokeWidth="1" />
                     </svg>
