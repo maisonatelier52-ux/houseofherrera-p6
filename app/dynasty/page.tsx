@@ -133,7 +133,7 @@ export default function Dynasty() {
                     </div>
 
                     {/* Right Column: Sidebar Info (1/3 space) */}
-                    <Link href="/jose-herrera-von-uslar-gleichen" className="md:col-span-1 flex flex-col items-center md:items-start md:pl-16 pt-18 group cursor-pointer">
+                    <Link href="/jose-herrera-von-uslar-gleichen" className="md:col-span-1 flex flex-col items-center md:items-start md:pl-16 md:pt-18 group cursor-pointer">
                         <div className="space-y-1 text-center md:text-left">
                             <span className="text-[9px] md:text-[10px] tracking-[0.2em] text-[#B5A691] font-bold font-din uppercase block group-hover:text-[#B5A691]/80 transition-colors">ABOUT</span>
                             <span className="text-[9px] md:text-[10px] tracking-[0.15em] text-[#B5A691]/70 font-light font-din uppercase leading-relaxed block max-w-[180px] group-hover:text-[#B5A691] transition-colors">
@@ -174,7 +174,7 @@ export default function Dynasty() {
                     </div>
 
                     {/* Right Column: Sidebar Info (1/3 space) */}
-                    <div className="md:col-span-1 flex flex-col items-center md:items-start md:pl-16 pt-46">
+                    <div className="md:col-span-1 flex flex-col items-center md:items-start md:pl-16  md:pt-46">
                         <div className="space-y-1 text-center md:text-left">
                             <span className="text-[10px] tracking-[0.2em] text-[#B5A691] font-bold font-din uppercase block">ABOUT</span>
                             <span className="text-[10px] tracking-[0.15em] text-[#B5A691]/70 font-light font-din uppercase leading-relaxed block max-w-[180px]">
