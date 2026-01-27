@@ -60,34 +60,34 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                     </div>
 
                     {/* Right Side Content Container */}
-                    <div className="relative flex-1 flex flex-col items-center justify-center z-10 bg-white/60 backdrop-blur-md lg:bg-transparent">
+                    <div className="relative flex-1 flex flex-col items-center justify-center z-10 bg-white/60 md:bg-white/40 backdrop-blur-md lg:bg-transparent px-6">
 
                         {/* Close Button */}
-                        <div className="absolute top-10 right-10 flex items-center gap-3 group cursor-pointer pointer-events-auto" onClick={onClose}>
-                            <X className="w-5 h-5 text-[#757370ff]/70 group-hover:text-[#757370ff]/50 transition-colors" strokeWidth={2} />
+                        <div className="absolute top-8 md:top-10 right-8 md:right-10 flex items-center gap-3 group cursor-pointer pointer-events-auto" onClick={onClose}>
+                            <X className="w-5 h-5 text-white/60 group-hover:text-white/50 transition-colors" strokeWidth={2} />
                         </div>
 
-                        <div className="relative w-full flex items-center justify-center gap-0 pl-12">
+                        <div className="relative w-full flex items-center justify-center gap-0 md:pl-12">
                             {/* Menu Items */}
-                            <nav className="flex flex-col items-center md:items-start gap-2">
+                            <nav className="flex flex-col items-center md:items-start gap-1 md:gap-2">
                                 {menuItems.map((item, index) => (
                                     <motion.div
                                         key={item.label}
                                         initial={{ opacity: 0, x: -30 }}
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{ duration: 1.2, delay: 0.2 + index * 0.1 }}
-                                        className="flex flex-col items-center md:items-start gap-3"
+                                        className="flex flex-col items-center md:items-start gap-2 md:gap-3"
                                     >
                                         <Link
                                             href={item.href}
                                             onClick={onClose}
-                                            className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.2em] md:tracking-wider text-[0.55rem] md:text-[0.60rem] font-light text-[#8f8c89ff] hover:text-[#B5A691] text-center md:text-left"
+                                            className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.25em] md:tracking-wider text-[0.6rem] md:text-[0.60rem] font-light text-white/60 hover:text-[#B5A691] text-center md:text-left py-2 md:py-0"
                                         >
                                             {item.label}
                                         </Link>
                                         {index < menuItems.length - 1 && (
                                             <div
-                                                className="w-16 md:w-[88px] h-[1px] my-4 md:my-[1.5rem] bg-[repeating-linear-gradient(90deg,rgba(181,166,145,0.4)_1px,rgba(181,166,145,0.4)_1px,rgba(181,166,145,0.4)_4px,transparent_5px)]"
+                                                className="w-16 md:w-[88px] h-[1px] my-3 md:my-[1.5rem] bg-[repeating-linear-gradient(90deg,rgba(181,166,145,0.4)_1px,rgba(181,166,145,0.4)_1px,rgba(181,166,145,0.4)_4px,transparent_5px)]"
                                             />
                                         )}
                                     </motion.div>
