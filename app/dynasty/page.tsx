@@ -146,7 +146,7 @@ export default function Dynasty() {
                     </div>
 
                     {/* Secondary Navigation */}
-                    <nav className="flex flex-wrap items-center justify-center gap-x-18 gap-y-6 text-[10px] tracking-[0.1em] text-[#B5A691]/70 font-extralight mb-18 font-din z-10 w-full max-w-5xl">
+                    <nav className="flex flex-wrap items-center justify-center gap-x-18 gap-y-6 text-[10px] tracking-[0.1em] text-[#B5A691]/70 font-extralight mb-14 font-din z-10 w-full max-w-5xl">
                         <Link href="/about" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">About</Link>
                         <Link href="/dynasty" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Dynasty</Link>
                         <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Symbols of the House</Link>
