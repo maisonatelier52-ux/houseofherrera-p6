@@ -113,16 +113,6 @@ export default function Dynasty() {
                         aboutName={<>Hernan De Herrera<br />Lord of Ampudia I</>}
                         isFirst
                     />
-
-                    <AncestorSection
-                        name={<>Hernan De Herrera<br />Lord of Ampudia I</>}
-                        date="CIRCA 1355"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>HERNAN DE HERRERA<br />LORD OF AMPUDIA I</>}
-                        pt="md:pt-46"
-                    />
                     <AncestorSection
                         name={<>Pedro Garcia<br />De Herrera Y Rojas</>}
                         date="1390 - 1455"
