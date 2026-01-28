@@ -52,7 +52,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                                 ease: [0.22, 1, 0.36, 1]
                             }}
                         >
-                            <h2 className="text-[7rem] md:text-[9rem] font-libre text-[#e1ddd8ff]/60 leading-[0.8] tracking-tighter">
+                            <h2 className="text-[7rem] md:text-[9rem] font-libre text-[#e1ddd8ff]/60 leading-[0.9] tracking-tighter">
                                 House of<br />
                                 Herrera
                             </h2>
@@ -60,34 +60,34 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                     </div>
 
                     {/* Right Side Content Container */}
-                    <div className="relative flex-1 flex flex-col items-center justify-center z-10 bg-white/60 md:bg-white/40 backdrop-blur-md lg:bg-transparent px-6">
+                    <div className="relative flex-1 flex flex-col items-center justify-center z-10 bg-black/40 backdrop-blur-none md:bg-black/30 px-6">
 
                         {/* Close Button */}
                         <div className="absolute top-8 md:top-10 right-8 md:right-10 flex items-center gap-3 group cursor-pointer pointer-events-auto" onClick={onClose}>
-                            <X className="w-5 h-5 text-white/60 group-hover:text-white/50 transition-colors" strokeWidth={2} />
+                            <X className="w-6 h-6 md:w-5 md:h-5 text-white/80 md:text-white/60 group-hover:text-white transition-colors" strokeWidth={1.5} />
                         </div>
 
                         <div className="relative w-full flex items-center justify-center gap-0 md:pl-12">
                             {/* Menu Items */}
-                            <nav className="flex flex-col items-center md:items-start gap-1 md:gap-2">
+                            <nav className="flex flex-col items-center md:items-start gap-0">
                                 {menuItems.map((item, index) => (
                                     <motion.div
                                         key={item.label}
-                                        initial={{ opacity: 0, x: -30 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        transition={{ duration: 1.2, delay: 0.2 + index * 0.1 }}
-                                        className="flex flex-col items-center md:items-start gap-2 md:gap-3"
+                                        initial={{ opacity: 0, y: 10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.8, delay: 0.2 + index * 0.1 }}
+                                        className="flex flex-col items-center md:items-start"
                                     >
                                         <Link
                                             href={item.href}
                                             onClick={onClose}
-                                            className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.25em] md:tracking-wider text-[0.6rem] md:text-[0.60rem] font-light text-white/60 hover:text-[#B5A691] text-center md:text-left py-2 md:py-0"
+                                            className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.3em] md:tracking-wider text-[0.65rem] md:text-[0.60rem] font-light text-white/80 md:text-white/60 hover:text-[#B5A691] text-center md:text-left py-4 md:py-0"
                                         >
                                             {item.label}
                                         </Link>
                                         {index < menuItems.length - 1 && (
                                             <div
-                                                className="w-16 md:w-[88px] h-[1px] my-3 md:my-[1.5rem] bg-[repeating-linear-gradient(90deg,rgba(181,166,145,0.4)_1px,rgba(181,166,145,0.4)_1px,rgba(181,166,145,0.4)_4px,transparent_5px)]"
+                                                className="w-20 md:w-[88px] h-[1px] my-1 md:my-[1.5rem] bg-[repeating-linear-gradient(90deg,rgba(255,255,255,0.2)_1px,rgba(255,255,255,0.2)_1px,transparent_4px,transparent_5px)] md:bg-[repeating-linear-gradient(90deg,rgba(181,166,145,0.4)_1px,rgba(181,166,145,0.4)_1px,rgba(181,166,145,0.4)_4px,transparent_5px)]"
                                             />
                                         )}
                                     </motion.div>
