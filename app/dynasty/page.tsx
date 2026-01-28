@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import AncestorSection from "../components/AncestorSection";
+import { ancestors } from "../data/ancestors";
 
 export default function Dynasty() {
     const scrollToNext = () => {
@@ -106,131 +106,20 @@ export default function Dynasty() {
 
                 {/* Ancestor Highlights */}
                 <div className="w-full flex flex-col gap-20">
-                    <AncestorSection
-                        name={<>Hernan De Herrera<br />Lord of Ampudia I</>}
-                        date="CIRCA 1355"
-                        decorativeImage="/images/about/HofH-Lower3.png"
-                        aboutName={<>Hernan De Herrera<br />Lord of Ampudia I</>}
-                        isFirst
-                    />
-                    <AncestorSection
-                        name={<>Pedro Garcia<br />De Herrera Y Rojas</>}
-                        date="1390 - 1455"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>PEDRO GARCIA<br />DE HERRERA Y ROJAS</>}
-                        pt="md:pt-46"
-                    />
-                     <AncestorSection
-                        name={<>Diego Garcia<br />De Herrera Y Ayala</>}
-                        date="CIRCA 1417"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>DIEGO GARCIA<br />DE HERRERA Y AYALA</>}
-                        pt="md:pt-46"
-                    />
-                    <AncestorSection
-                        name={<>Agustin De Herrera<br />Y Rojas Ayala</>}
-                        date="1569 - 1632"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>AGUSTIN DE HERRERA<br />Y ROJAS AYALA</>}
-                        pt="md:pt-46"
-                    />
-                    <AncestorSection
-                        name={<>Juan Sarmiento De Herrera Y<br />Fernandez Pachego</>}
-                        date="1607 - 1664"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>JUAN SARMIENTO DE HERRERA<br />Y FERNANDEZ PACHEGO</>}
-                        pt="md:pt-46"
-                    />
-                    <AncestorSection
-                        name={<>Agustin Nicolas<br />De Herrera Y Loaisa</>}
-                        date="1633 - 1695"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>AGUSTIN NICOLAS<br />DE HERRERA Y LOAISA</>}
-                        pt="md:pt-46"
-                    />
-                    <AncestorSection
-                        name={<>Francisco Carlos<br />Herrera Y Ascanio</>}
-                        date="1671 - 1730"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>FRANCISCO CARLOS<br />HERRERA Y ASCANIO</>}
-                        pt="md:pt-46"
-                    />
-                    <AncestorSection
-                        name={<>Juan Manuel<br />De Herrera Y Misones</>}
-                        date="1712 - 1767"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>JUAN MANUEL<br />DE HERRERA Y MISONES</>}
-                        pt="md:pt-46"
-                    />
-                    <AncestorSection
-                        name={<>Martin Eugenio<br />De Herrera Y Rada</>}
-                        date="1754 - 1810"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>MARTIN EUGENIO<br />DE HERRERA Y RADA</>}
-                        pt="md:pt-46"
-                    />
-                    <AncestorSection
-                        name={<>Mariano Jose Herrera<br />Y Rodriguez Del Toro Ibara</>}
-                        date="CIRCA 1789"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>MARiano Jose Herrera<br />Y Rodriguez Del Toro Ibara</>}
-                        pt="md:pt-46"
-                    />
-                    <AncestorSection
-                        name={<>Jose De Herrera<br />Y Irogoyen</>}
-                        date="CIRCA 1813"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>JOSE DE HERRERA<br />Y IROGOYEN</>}
-                        pt="md:pt-46"
-                    />
-                    <AncestorSection
-                        name={<>Jose De Herrera<br />Manrique De Lara</>}
-                        date="CIRCA 1880"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>JOSE DE HERRERA<br />MANRIQUE DE LARA</>}
-                        pt="md:pt-46"
-                    />
-                    <AncestorSection
-                        href="/jose-herrera-von-uslar-gleichen"
-                        name={<>Jose Herrera<br />Von Uslar Gleichen</>}
-                        date="CIRCA 1906"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>JOSE HERRERA<br />VON USLAR GLEICHEN</>}
-                        pt="md:pt-46"
-                    />
-                     <AncestorSection
-                        name={<>Julio Jose Herrera Velutini<br />Von Uslar</>}
-                        date="1945 - 2019"
-                        decorativeImage="/images/about/image (1).png"
-                        decorativeImageStyles="object-contain brightness-60 rotate-90"
-                        decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>JUlio Jose Herrera Velutini<br />Von Uslar</>}
-                        pt="md:pt-46"
-                    />
+                    {ancestors.map((ancestor, index) => (
+                        <AncestorSection
+                            key={ancestor.slug}
+                            href={`/ancestors/${ancestor.slug}`}
+                            name={ancestor.name}
+                            date={ancestor.date}
+                            decorativeImage={index === 0 ? "/images/about/HofH-Lower3.png" : "/images/about/image (1).png"}
+                            decorativeImageStyles={index === 0 ? "object-contain" : "object-contain brightness-60 rotate-90"}
+                            decorativeContainerStyles={index === 0 ? "w-full max-w-[320px] md:max-w-[584px] aspect-[584/74]" : "w-58 h-38"}
+                            aboutName={ancestor.fullName}
+                            isFirst={index === 0}
+                            pt={index === 0 ? "md:pt-18" : "md:pt-46"}
+                        />
+                    ))}
                 </div>
 
             </section>

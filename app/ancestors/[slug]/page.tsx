@@ -1,11 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import Link from "next/link";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
+import { ancestors } from "../../data/ancestors";
+import { notFound } from "next/navigation";
+import { use } from "react";
 
-export default function JoseHerreraPage() {
+export default function AncestorPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = use(params);
+    const ancestor = ancestors.find((a) => a.slug === slug);
+
+    if (!ancestor) {
+        notFound();
+    }
+
     return (
         <div className="w-full bg-black snap-y snap-mandatory h-screen overflow-y-auto scroll-smooth flex flex-col relative">
             <Navbar />
@@ -16,7 +25,7 @@ export default function JoseHerreraPage() {
                     {/* Family Crest */}
                     <div className="relative w-48 h-64 md:w-76 md:h-72 mb-0">
                         <Image
-                            src="/images/about/hofHP (1)-1.png"
+                            src={ancestor.crestImage}
                             alt="Family Crest"
                             fill
                             className="object-contain saturate-60"
@@ -26,93 +35,82 @@ export default function JoseHerreraPage() {
 
                     {/* Headline Title */}
                     <div className="mb-8">
-                        <h1 className="text-[3rem] md:text-[2.3rem] font-libre text-[#B5A691] leading-[1] tracking-tight font-light">
-                            Jose Herrera<br />
-                            Von Uslar Gleichen
+                        <h1 className="text-[3rem] md:text-[2.3rem] font-libre text-[#B5A691] leading-[1] tracking-tight font-light whitespace-pre-line">
+                            {ancestor.name.split("\n").map((line, i) => (
+                                <span key={i}>
+                                    {line}
+                                    <br />
+                                </span>
+                            ))}
                         </h1>
                     </div>
 
                     {/* Subtitle */}
                     <div className="mb-6">
                         <p className="text-xl md:text-2xl font-libre text-[#B5A691]/80 font-light">
-                            House of Herrera
+                            {ancestor.title}
                         </p>
                     </div>
 
                     {/* Date Tag */}
                     <div className="mb-12">
                         <span className="text-[11px] tracking-[0.4em] text-[#B5A691]/60 font-din uppercase">
-                            CIRCA 1906
+                            {ancestor.date}
                         </span>
                     </div>
 
                     {/* Description Content */}
-                    <div className="max-w-2xl space-y-2 mb-18">
-                        <p className="text-[12px] md:text-[13px] font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed">
-                            Marquis of Lanzarote and Count of Palomar.
-                        </p>
-
-                        <p className="text-[12px] md:text-[13px] font-helvetica font-light tracking-tight text-[#B5A691]/60 leading-relaxed max-w-xl mx-auto">
-                            A lawyer by profession, he studied in Venezuela and in the United States.<br />
-                            In 1936, he co-founded the National Action Movement (MAN),<br />
-                            with a purpose to fight against extremism, communism,<br />
-                            dissolution and social unrest, and ultimately opposing<br />
-                            the propagation of the Marxist-Leninist ideology in Venezuela,<br />
-                            by any means necessary.
-                        </p>
+                    <div className="max-w-2xl space-y-6 mb-18">
+                        {ancestor.bioParagraphs.map((para, i) => (
+                            <p key={i} className="text-[12px] md:text-[13px] font-helvetica font-light tracking-tight text-[#B5A691]/60 leading-relaxed max-w-xl mx-auto">
+                                {para}
+                            </p>
+                        ))}
                     </div>
 
-                    {/* Person Image */}
-                    <div className="relative w-64 h-80 md:w-72 md:h-96 mb-12 opacity-80">
-                        <Image
-                            src="/images/about/image 24.png"
-                            alt="Jose Herrera Portrait"
-                            fill
-                            className="object-contain"
-                            priority
-                        />
-                    </div>
-
-                    {/* Additional Images Row */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-4xl opacity-80 mb-12">
-                        <div className="relative aspect-[2/3] w-full">
+                    {/* Person Image (Optional) */}
+                    {ancestor.portraitImage && (
+                        <div className="relative w-64 h-80 md:w-72 md:h-96 mb-12 opacity-80">
                             <Image
-                                src="/images/about/Herrera8.avif"
-                                alt="Herrera History 1"
+                                src={ancestor.portraitImage}
+                                alt={`${ancestor.name} Portrait`}
                                 fill
                                 className="object-contain"
+                                priority
                             />
                         </div>
-                        <div className="relative aspect-[2/3] w-full">
-                            <Image
-                                src="/images/about/Herrera10.avif"
-                                alt="Herrera History 2"
-                                fill
-                                className="object-contain"
-                            />
+                    )}
+
+                    {/* Additional Images Row (Optional) */}
+                    {ancestor.historyImages && ancestor.historyImages.length > 0 && (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-4xl opacity-80 mb-12">
+                            {ancestor.historyImages.map((img, i) => (
+                                <div key={i} className="relative aspect-[2/3] w-full">
+                                    <Image
+                                        src={img}
+                                        alt={`${ancestor.name} History ${i + 1}`}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                            ))}
                         </div>
-                    </div>
-                    {/* Humanitarian Legacy Text */}
-                    <div className="max-w-2xl space-y-4 mt-4 mb-0">
-                        <p className="text-[12px] md:text-[13px] font-helvetica font-light tracking-tight text-[#B5A691]/80 leading-relaxed max-w-xl mx-auto">
-                            In 1950, Jose Herrera Von Uslar Gleichen advocated a strong movement<br />
-                            which oversaw the adoption of World War II orphans.
-                        </p>
+                    )}
 
-                        <p className="text-[12px] md:text-[13px] font-helvetica font-light tracking-tight text-[#B5A691]/80 leading-relaxed max-w-xl mx-auto">
-                            When he was Ambassador to Sweden, Herrera Uslar organised<br />
-                            the transfer of 1,000 orphaned war refugees in Switzerland.
-                        </p>
-
-                        <p className="text-[12px] md:text-[13px] font-helvetica font-light tracking-tight text-[#B5A691]/80 leading-relaxed max-w-xl mx-auto">
-                            The orphans arrived in Venezuela in batches of 50 children,<br />
-                            and were welcomed to the colony of Catia La Mar,<br />
-                            where they were adopted by Venezuelan families.
-                        </p>
-                    </div>
+                    {/* Legacy Section (Optional) */}
+                    {ancestor.legacyParagraphs && ancestor.legacyParagraphs.length > 0 && (
+                        <div className="max-w-2xl space-y-4 mt-4 mb-0">
+                            {ancestor.legacyParagraphs.map((para, i) => (
+                                <p key={i} className="text-[12px] md:text-[13px] font-helvetica font-light tracking-tight text-[#B5A691]/80 leading-relaxed max-w-xl mx-auto">
+                                    {para}
+                                </p>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </section>
 
+            {/* Footer Section - Common Across Bio Pages */}
             <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative overflow-hidden px-4">
                 <div className="max-w-6xl w-full mx-auto px-8 flex flex-col items-center flex-grow justify-center relative">
 
@@ -135,7 +133,6 @@ export default function JoseHerreraPage() {
                     </nav>
 
                     {/* Connect Section */}
-
                     <div className="flex flex-col items-center gap-0 z-10">
                         <span className="text-[8px] md:text-[9px] tracking-[0.2em] text-[#B5A691] font-light font-din opacity-80 uppercase">CONNECT WITH US</span>
 
