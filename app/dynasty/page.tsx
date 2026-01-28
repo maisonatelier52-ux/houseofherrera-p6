@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
+import AncestorSection from "../components/AncestorSection";
 
 export default function Dynasty() {
     const scrollToNext = () => {
@@ -103,86 +104,143 @@ export default function Dynasty() {
                     </div>
                 </div>
 
-                <div className="max-w-5xl w-full mx-auto md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-4 items-center">
-                    {/* Left Column: Title Content (2/3 space) */}
-                    <div className="md:col-span-2 flex flex-col items-center">
-                        {/* Decorative Header Ornate */}
-                        <div className="mb-6 relative w-full max-w-[320px] md:max-w-[584px] aspect-[584/74]">
-                            <Image
-                                src="/images/about/HofH-Lower3.png"
-                                alt="Ornate Divider"
-                                fill
-                                className="object-contain"
-                                priority
-                            />
-                        </div>
+                {/* Ancestor Highlights */}
+                <div className="w-full flex flex-col gap-20">
+                    <AncestorSection
+                        name={<>Hernan De Herrera<br />Lord of Ampudia I</>}
+                        date="CIRCA 1355"
+                        decorativeImage="/images/about/HofH-Lower3.png"
+                        aboutName={<>Hernan De Herrera<br />Lord of Ampudia I</>}
+                        isFirst
+                    />
 
-                        {/* Person Title */}
-                        <Link href="/jose-herrera-von-uslar-gleichen" className="group text-center mb-8 block cursor-pointer">
-                            <h2 className="text-[2.5rem] md:text-[2.5rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light opacity-90 group-hover:opacity-100 transition-opacity">
-                                Jose Herrera<br />
-                                Von Uslar Gleichen
-                            </h2>
-                        </Link>
-
-                        {/* Bottom Line & Date */}
-                        <div className="w-full max-w-2xl flex flex-col items-center">
-                            <div className="w-full h-[0.5px] bg-[#B5A691]/40 mb-6" />
-                            <span className="text-[10px] md:text-[11px] tracking-[0.4em] text-[#B5A691] font-din uppercase opacity-70">CIRCA 1355</span>
-                        </div>
-                    </div>
-
-                    {/* Right Column: Sidebar Info (1/3 space) */}
-                    <Link href="/jose-herrera-von-uslar-gleichen" className="md:col-span-1 flex flex-col items-center md:items-start md:pl-16 md:pt-18 group cursor-pointer">
-                        <div className="space-y-1 text-center md:text-left">
-                            <span className="text-[9px] md:text-[10px] tracking-[0.2em] text-[#B5A691] font-bold font-din uppercase block group-hover:text-[#B5A691]/80 transition-colors">ABOUT</span>
-                            <span className="text-[9px] md:text-[10px] tracking-[0.15em] text-[#B5A691]/70 font-light font-din uppercase leading-relaxed block max-w-[180px] group-hover:text-[#B5A691] transition-colors">
-                                JOSE HERRERA<br />
-                                VON USLAR GLEICHEN
-                            </span>
-                        </div>
-                    </Link>
-                </div>
-                
-
-                <div className="max-w-5xl w-full mx-auto md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-4 items-center mt-0">
-                    {/* Left Column: Title Content (2/3 space) */}
-                    <div className="md:col-span-2 flex flex-col items-center">
-                        {/* Decorative Item: image (1).png */}
-                        <div className="mb-6 relative w-58 h-38">
-                            <Image
-                                src="/images/about/image (1).png"
-                                alt="Column Divider"
-                                fill
-                                className="object-contain brightness-60 rotate-90"
-                            />
-                        </div>
-
-                        {/* Person Title */}
-                        <div className="text-center mb-8 mt-10">
-                            <h2 className="text-[2.5rem] md:text-[2.5rem] font-libre text-[#B5A691] leading-[1] tracking-tight font-light opacity-90">
-                                Pedro Garcia<br />
-                                De Herrera Y Rojas
-                            </h2>
-                        </div>
-
-                        {/* Bottom Line & Date */}
-                        <div className="w-full max-w-2xl flex flex-col items-center">
-                            <div className="w-full h-[0.5px] bg-[#B5A691]/40 mb-6" />
-                            <span className="text-[11px] tracking-[0.4em] text-[#B5A691] font-din uppercase opacity-70">1390 - 1455</span>
-                        </div>
-                    </div>
-
-                    {/* Right Column: Sidebar Info (1/3 space) */}
-                    <div className="md:col-span-1 flex flex-col items-center md:items-start md:pl-16  md:pt-46">
-                        <div className="space-y-1 text-center md:text-left">
-                            <span className="text-[10px] tracking-[0.2em] text-[#B5A691] font-bold font-din uppercase block">ABOUT</span>
-                            <span className="text-[10px] tracking-[0.15em] text-[#B5A691]/70 font-light font-din uppercase leading-relaxed block max-w-[180px]">
-                                PEDRO GARCIA<br />
-                                DE HERRERA Y ROJAS
-                            </span>
-                        </div>
-                    </div>
+                    <AncestorSection
+                        name={<>Hernan De Herrera<br />Lord of Ampudia I</>}
+                        date="CIRCA 1355"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>HERNAN DE HERRERA<br />LORD OF AMPUDIA I</>}
+                        pt="md:pt-46"
+                    />
+                    <AncestorSection
+                        name={<>Pedro Garcia<br />De Herrera Y Rojas</>}
+                        date="1390 - 1455"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>PEDRO GARCIA<br />DE HERRERA Y ROJAS</>}
+                        pt="md:pt-46"
+                    />
+                     <AncestorSection
+                        name={<>Diego Garcia<br />De Herrera Y Ayala</>}
+                        date="CIRCA 1417"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>DIEGO GARCIA<br />DE HERRERA Y AYALA</>}
+                        pt="md:pt-46"
+                    />
+                    <AncestorSection
+                        name={<>Agustin De Herrera<br />Y Rojas Ayala</>}
+                        date="1569 - 1632"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>AGUSTIN DE HERRERA<br />Y ROJAS AYALA</>}
+                        pt="md:pt-46"
+                    />
+                    <AncestorSection
+                        name={<>Juan Sarmiento De Herrera Y<br />Fernandez Pachego</>}
+                        date="1607 - 1664"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>JUAN SARMIENTO DE HERRERA<br />Y FERNANDEZ PACHEGO</>}
+                        pt="md:pt-46"
+                    />
+                    <AncestorSection
+                        name={<>Agustin Nicolas<br />De Herrera Y Loaisa</>}
+                        date="1633 - 1695"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>AGUSTIN NICOLAS<br />DE HERRERA Y LOAISA</>}
+                        pt="md:pt-46"
+                    />
+                    <AncestorSection
+                        name={<>Francisco Carlos<br />Herrera Y Ascanio</>}
+                        date="1671 - 1730"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>FRANCISCO CARLOS<br />HERRERA Y ASCANIO</>}
+                        pt="md:pt-46"
+                    />
+                    <AncestorSection
+                        name={<>Juan Manuel<br />De Herrera Y Misones</>}
+                        date="1712 - 1767"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>JUAN MANUEL<br />DE HERRERA Y MISONES</>}
+                        pt="md:pt-46"
+                    />
+                    <AncestorSection
+                        name={<>Martin Eugenio<br />De Herrera Y Rada</>}
+                        date="1754 - 1810"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>MARTIN EUGENIO<br />DE HERRERA Y RADA</>}
+                        pt="md:pt-46"
+                    />
+                    <AncestorSection
+                        name={<>Mariano Jose Herrera<br />Y Rodriguez Del Toro Ibara</>}
+                        date="CIRCA 1789"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>MARiano Jose Herrera<br />Y Rodriguez Del Toro Ibara</>}
+                        pt="md:pt-46"
+                    />
+                    <AncestorSection
+                        name={<>Jose De Herrera<br />Y Irogoyen</>}
+                        date="CIRCA 1813"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>JOSE DE HERRERA<br />Y IROGOYEN</>}
+                        pt="md:pt-46"
+                    />
+                    <AncestorSection
+                        name={<>Jose De Herrera<br />Manrique De Lara</>}
+                        date="CIRCA 1880"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>JOSE DE HERRERA<br />MANRIQUE DE LARA</>}
+                        pt="md:pt-46"
+                    />
+                    <AncestorSection
+                        href="/jose-herrera-von-uslar-gleichen"
+                        name={<>Jose Herrera<br />Von Uslar Gleichen</>}
+                        date="CIRCA 1906"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>JOSE HERRERA<br />VON USLAR GLEICHER</>}
+                        pt="md:pt-46"
+                    />
+                     <AncestorSection
+                        name={<>Julio Jose Herrera Velutini<br />Von Uslar</>}
+                        date="1945 - 2019"
+                        decorativeImage="/images/about/image (1).png"
+                        decorativeImageStyles="object-contain brightness-60 rotate-90"
+                        decorativeContainerStyles="w-58 h-38"
+                        aboutName={<>JUlio Jose Herrera Velutini<br />Von Uslar</>}
+                        pt="md:pt-46"
+                    />
                 </div>
 
             </section>
