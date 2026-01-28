@@ -219,7 +219,7 @@ export default function Dynasty() {
                         decorativeImage="/images/about/image (1).png"
                         decorativeImageStyles="object-contain brightness-60 rotate-90"
                         decorativeContainerStyles="w-58 h-38"
-                        aboutName={<>JOSE HERRERA<br />VON USLAR GLEICHER</>}
+                        aboutName={<>JOSE HERRERA<br />VON USLAR GLEICHEN</>}
                         pt="md:pt-46"
                     />
                      <AncestorSection
