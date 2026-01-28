@@ -60,9 +60,9 @@ export default function AncestorPage({ params }: { params: Promise<{ slug: strin
                     </div>
 
                     {/* Description Content */}
-                    <div className="max-w-2xl space-y-6 mb-18">
-                        {ancestor.bioParagraphs.map((para, i) => (
-                            <p key={i} className="text-[12px] md:text-[13px] font-helvetica font-light tracking-tight text-[#B5A691]/60 leading-relaxed max-w-xl mx-auto">
+                    <div className="max-w-2xl mx-auto space-y-4 mb-18">
+                        {ancestor.bioParagraphs?.map((para, i) => (
+                            <p key={i} className="text-[12px] md:text-[13px] font-helvetica font-light tracking-tight text-[#B5A691]/60 leading-relaxed max-w-lg mx-auto">
                                 {para}
                             </p>
                         ))}
@@ -83,9 +83,13 @@ export default function AncestorPage({ params }: { params: Promise<{ slug: strin
 
                     {/* Additional Images Row (Optional) */}
                     {ancestor.historyImages && ancestor.historyImages.length > 0 && (
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-4xl opacity-80 mb-12">
+                        <div className={`w-full max-w-4xl opacity-80 mb-12 gap-12 ${ancestor.historyImages.length === 1
+                                ? "flex justify-center"
+                                : "grid grid-cols-1 md:grid-cols-2"
+                            }`}>
                             {ancestor.historyImages.map((img, i) => (
-                                <div key={i} className="relative aspect-[2/3] w-full">
+                                <div key={i} className={`relative aspect-[2/3] ${ancestor.historyImages?.length === 1 ? "w-full max-w-md" : "w-full"
+                                    }`}>
                                     <Image
                                         src={img}
                                         alt={`${ancestor.name} History ${i + 1}`}

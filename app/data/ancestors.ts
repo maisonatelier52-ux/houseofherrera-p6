@@ -7,7 +7,7 @@ export interface AncestorData {
     crestImage: string;
     portraitImage?: string;
     historyImages?: string[];
-    bioParagraphs: string[];
+    bioParagraphs?: string[];
     legacyParagraphs?: string[];
 }
 
@@ -19,10 +19,6 @@ export const ancestors: AncestorData[] = [
         title: "Lord of Ampudia I",
         date: "CIRCA 1355",
         crestImage: "/images/about/hofHP (1)-1.png",
-        bioParagraphs: [
-            "A prominent figure in the early Herrera dynasty, known for his strategic leadership and foundational role in the family's influence in Spain.",
-            "As the first Lord of Ampudia, he established the family's presence in the region, laying the groundwork for generations of nobility and public service."
-        ]
     },
     {
         slug: "pedro-garcia-de-herrera-y-rojas",
@@ -31,9 +27,12 @@ export const ancestors: AncestorData[] = [
         title: "House of Herrera",
         date: "1390 - 1455",
         crestImage: "/images/about/hofHP (1)-1.png",
+        historyImages: [
+            "/images/Herrera1.avif"
+        ],
         bioParagraphs: [
-            "A distinguished member of the Herrera family who significantly expanded the family's landholdings and influence during the 15th century.",
-            "His legacy is marked by his dedication to the Crown and his role in the socio-political development of his time."
+            "A Castilian nobleman, who was the first to become a notable antecedent of the family.",
+            "Pedro Garcia De Herrera Y Rojas was the Marshal of Castile."
         ]
     },
     {
@@ -44,8 +43,7 @@ export const ancestors: AncestorData[] = [
         date: "CIRCA 1417",
         crestImage: "/images/about/hofHP (1)-1.png",
         bioParagraphs: [
-            "Revered for his contributions to the family's history, Diego Garcia was a key figure in the mid-15th century Herrera lineage.",
-            "His leadership and commitment to family values continue to be honored as a pillar of the Herrera dynasty."
+            "Towards the early 15th century, Diego Garcia de Herrera y Ayala (1417-1485) conquered the Canary Islands. Nicknamed the King of the Canaries, he laid the very foundation for the Herrera family, elevating their stature and establishing the social influence the family holds to this day.  ",
         ]
     },
     {
@@ -55,9 +53,14 @@ export const ancestors: AncestorData[] = [
         title: "House of Herrera",
         date: "1569 - 1632",
         crestImage: "/images/about/hofHP (1)-1.png",
+        historyImages: [
+            "/images/Agustin De Herrera.avif"
+        ],
         bioParagraphs: [
-            "A central figure in the late 16th and early 17th centuries, Agustin represented the enduring strength of the Herrera name through periods of great change.",
-            "His influence extended across various parts of Europe, further establishing the family's international presence."
+            "A descendant of King Diego Garcia de Herrera y Ayala, Agustin was the first in the family to receive the title of Count of Lanzarote, created by King Philip II in 1548, in his favour, which was later elevated to the title of Marquis (1567) to reward him for his services rendered to the Kingdom.",
+            "This honorary title refers to the Canary Island of Lanzarote.",
+            "Agustin was commissioned by King Philip to conquer territories in Latin America on behalf of the Spanish Crown.",
+            "Agustin de Herrera y Rojas Ayala quickly became a trusted member of the Royal Council, and this certitude elevated his family to become one of the richest and the most influential families in South America and the Caribbean."
         ]
     },
     {
@@ -67,9 +70,13 @@ export const ancestors: AncestorData[] = [
         title: "House of Herrera",
         date: "1607 - 1664",
         crestImage: "/images/about/hofHP (1)-1.png",
+        historyImages: [
+            "/images/juan.avif"
+        ],
         bioParagraphs: [
-            "Juan Sarmiento was known for his scholarly pursuits and his role in the intellectual life of the 17th-century Herrera family.",
-            "His contributions to the arts and sciences helped shape the cultural legacy of the House of Herrera."
+            "Son of Agustin (The Count of Lanzarote), Juan Sarmiento de Herrera y Fernandez Pachego was the first to be born in Latin America, and to have resided there all of his life.",
+            "He dedicated his life to the orderliness of the dominions and the haciendas — La Vega and Montalban, bequeathed by his father.",
+            "He was the grandfather of Martin Eugenio Herrera y Rada, (Gentleman of Carlos III of Spain) and the father of the Bolivar y Palacios family."
         ]
     },
     {
@@ -79,10 +86,6 @@ export const ancestors: AncestorData[] = [
         title: "House of Herrera",
         date: "1633 - 1695",
         crestImage: "/images/about/hofHP (1)-1.png",
-        bioParagraphs: [
-            "A key figure in the late 17th century, Agustin Nicolas continued the family's tradition of public service and regional leadership.",
-            "His tenure was marked by a commitment to the family's long-standing values of trust and responsibility."
-        ]
     },
     {
         slug: "francisco-carlos-herrera-y-ascanio",
@@ -91,9 +94,10 @@ export const ancestors: AncestorData[] = [
         title: "House of Herrera",
         date: "1671 - 1730",
         crestImage: "/images/about/hofHP (1)-1.png",
+        portraitImage: "/images/francisco.jpg",
         bioParagraphs: [
-            "Francisco Carlos was a prominent figure in the early 18th century, overseeing a period of consolidation for the family's varied interests.",
-            "He was instrumental in maintaining the family's influence during a time of shifting political alliances in Europe."
+            "Captain, Master of the Field",
+            "Carbobo, Valencia"
         ]
     },
     {
@@ -103,10 +107,6 @@ export const ancestors: AncestorData[] = [
         title: "House of Herrera",
         date: "1712 - 1767",
         crestImage: "/images/about/hofHP (1)-1.png",
-        bioParagraphs: [
-            "Juan Manuel played a significant role in the mid-18th century Herrera lineage, focusing on the family's trade and maritime interests.",
-            "His contributions were essential in further expanding the House of Herrera's reach across the Atlantic."
-        ]
     },
     {
         slug: "martin-eugenio-de-herrera-y-rada",
@@ -115,9 +115,13 @@ export const ancestors: AncestorData[] = [
         title: "House of Herrera",
         date: "1754 - 1810",
         crestImage: "/images/about/hofHP (1)-1.png",
-        bioParagraphs: [
-            "A respected leader at the turn of the 19th century, Martin Eugenio was known for his administrative acumen and his dedication to family estates.",
-            "His legacy is one of stewardship and the careful preservation of the family's heritage through turbulent times."
+        historyImages: [
+            "/images/martin eugenio.avif"
+        ],
+         bioParagraphs: [
+            "Knight of the Order of Charles III",
+            "Havana, Cuba",
+            "Santo Domingo"
         ]
     },
     {
@@ -128,8 +132,9 @@ export const ancestors: AncestorData[] = [
         date: "CIRCA 1789",
         crestImage: "/images/about/hofHP (1)-1.png",
         bioParagraphs: [
-            "Mariano Jose was a prominent figure in the late 18th century, representing the family's deep roots and continued influence in Latin American affairs.",
-            "His contributions to the region's social and economic foundations are a vital part of the Herrera family history."
+            "Caracas, Venezuela. Havana, Cuba",
+            "Santo Domingo",
+            "Florida"
         ]
     },
     {
@@ -140,8 +145,7 @@ export const ancestors: AncestorData[] = [
         date: "CIRCA 1813",
         crestImage: "/images/about/hofHP (1)-1.png",
         bioParagraphs: [
-            "A notable member of the Herrera family in the early 19th century, Jose was instrumental in navigating the complex changes of the post-colonial era.",
-            "His leadership provided stability and continuity for the House of Herrera during a critical period of transition."
+            "Spain",
         ]
     },
     {
@@ -151,9 +155,13 @@ export const ancestors: AncestorData[] = [
         title: "House of Herrera",
         date: "CIRCA 1880",
         crestImage: "/images/about/hofHP (1)-1.png",
+        historyImages: [
+            "/images/jose de herrera.avif"
+        ],
         bioParagraphs: [
-            "Jose De Herrera Manrique De Lara was a key figure in the late 19th-century Herrera lineage, known for his commitment to the family's historical values.",
-            "His efforts were central to the preservation and promotion of the Herrera legacy in an increasingly modern world."
+            "Havana, Cuba",
+            "He married Carolina Uslar.",
+            "Carolina Uslar is the granddaughter of the German General Johann Von Uslar. Johann Von Uslar fought for the independence of Latin America and is buried next to Simón Bolívar in the National Pantheon."
         ]
     },
     {
@@ -186,9 +194,12 @@ export const ancestors: AncestorData[] = [
         title: "House of Herrera",
         date: "1945 - 2019",
         crestImage: "/images/about/hofHP (1)-1.png",
+        portraitImage: "/images/about/image 24.png",
+        historyImages: [
+            "/images/Julio Jose Herrera.avif"
+        ],
         bioParagraphs: [
-            "A visionary leader who carried the House of Herrera into the modern era with dignity and strategic foresight.",
-            "His legacy is one of unwavering commitment to family values and the continued prosperity of the Herrera legacy."
+            "Born in Austria. Died in Cartagena."
         ]
     }
 ];
