@@ -220,7 +220,7 @@ export default function Estates() {
 
                     {/* Descriptive Text */}
                     <div className="max-w-xl text-[12px] md:text-[12.3px] text-left space-y-4 mb-12 md:mb-16">
-                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed text-center">
+                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed text-left md:text-left">
                             Gleichen Castle owes its fame to the legend of the bigamous Count von Gleichen, who returned home from the Crusades with a second wife. The three castles known collectively as the &quot;Drei Gleichen&quot; are Gleichen Castle, Mühlburg Castle and Wachsenburg Castle. They are approx. 20 km from Erfurt in the Drei Gleichen conservation area.
                         </p>
                     </div>
@@ -292,11 +292,11 @@ export default function Estates() {
 
                     {/* Descriptive Text */}
                     <div className="max-w-xl text-[12px] md:text-[12.3px] text-left space-y-4 mb-12 md:mb-16">
-                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed text-left md:text-center">
+                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed text-left md:text-left">
                             Gothic noble fortress, built in the 15th century by the descendants to Pedro García Herrera, major-general of Castile and nephew of the bishop of Palencia Sancho de Rojas, founder of the Manor of Ampudia. The building is shaped as a trapezoid, with four square turrets in the corners and the front is symmetrical.
                         </p>
 
-                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed text-left md:text-center">
+                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed text-left md:text-left">
                             Today the castle houses a collection of art objects and antiques. Don Pedro de Ayala, the Count of Salvatierra, was one of the owners of the castle. He fought in favour of the comunera cause in the battle of Ampudia, which confronted the followers of the emperor and the troops of the Acuña Bishop.
                         </p>
                     </div>
@@ -321,6 +321,111 @@ export default function Estates() {
                     </div>
                 </div>
             </section>
+
+            {/* Section 6: Castle of Freudenthal */}
+            <section className="w-full flex flex-col items-center bg-black pt-12 pb-32 snap-start px-6">
+                <div className="max-w-4xl w-full mx-auto flex flex-col items-center text-center">
+
+                    {/* Ornate Divider Header */}
+                    <div className="mb-6 md:mb-10 relative w-full max-w-[320px] md:max-w-[480px] aspect-[584/74]">
+                        <Image
+                            src="/images/about/HofH-Lower3.png"
+                            alt="Ornate Header"
+                            fill
+                            className="object-contain brightness-90"
+                        />
+                    </div>
+
+                    {/* Section Title */}
+                    <div className="mb-12 md:mb-16">
+                        <h2 className="text-[2.2rem] md:text-[2.0rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light opacity-90">
+                            Castle of Freudenthal<br />
+                            (Uslar, Germany)
+                        </h2>
+                    </div>
+
+                    {/* Descriptive Text */}
+                    <div className="max-w-xl text-[12px] md:text-[12.3px] text-left space-y-4 mb-12 md:mb-16">
+                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed text-left md:text-left">
+                            Uslar was first mentioned in 1006/1007. In 1599, the Castle of Freudenthal was built, which burned down in 1612. In 1819, others parts of the town of Uslar was also burned down.
+                        </p>
+                    </div>
+
+                    {/* Estate Image */}
+                    <div className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] opacity-80">
+                        <Image
+                            src="/images/estates/Estates-12.avif"
+                            alt="Castle of Freudenthal"
+                            fill
+                            className="object-cover grayscale brightness-75 transition-transform duration-1000"
+                        />
+                    </div>
+
+                    {/* Caption */}
+                    <div className="w-full flex justify-start mt-4">
+                        <div className="flex items-center gap-3 text-[9px] md:text-[10px] tracking-[0.2em] text-[#B5A691]/50 font-din uppercase">
+                            <span>ESTATE IN USLAR, GERMANY</span>
+                            <span className="w-[1px] h-3 bg-[#B5A691]/50" />
+                            <span>CASTLE OF FREUDENTHAL</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Section 7: Uslar-Gleichen Castle */}
+            <section className="w-full flex flex-col items-center bg-black pt-12 pb-32 snap-start px-6">
+                <div className="max-w-4xl w-full mx-auto flex flex-col items-center text-center">
+
+                    {/* Ornate Divider Header */}
+                    <div className="mb-6 md:mb-10 relative w-full max-w-[320px] md:max-w-[480px] aspect-[584/74]">
+                        <Image
+                            src="/images/about/HofH-Lower3.png"
+                            alt="Ornate Header"
+                            fill
+                            className="object-contain brightness-90"
+                        />
+                    </div>
+
+                    {/* Section Title */}
+                    <div className="mb-12 md:mb-16">
+                        <h2 className="text-[2.2rem] md:text-[2.0rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light opacity-90">
+                            Uslar-Gleichen Castle<br />
+                            (Gleichen, Germany)
+                        </h2>
+                    </div>
+
+                    {/* Descriptive Text */}
+                    <div className="max-w-xl text-[12px] md:text-[12.3px] text-left space-y-4 mb-12 md:mb-16">
+                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed text-left md:text-left">
+                            Built around 1100 by the Counts of Reinhausen, who had turned their ancestral seat in Reinhausen into an Augustinian monastery, and thereafter the castles changed hands several times. Finally around 1270, the Gleichen went to the Lords of Uslar.
+                        </p>
+                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed text-left md:text-left">
+                            Soon afterwards the House of Uslar divided the assets between the two lines of Altengleichen and Neuengleichen. Neuengleichen fell in 1451 to the Landgraves of Hesse, whilst Altengleichen remained under Guelph rule. Not until the wake of the course of the Vienna Congress was ownership of Neuengleichen relinquished to the Kingdom of Hanover and from then on re-transferred back to the House of Uslar (at Altengleichen), which since 1825 had been called Uslar-Gleichen.
+                        </p>
+                    </div>
+
+                    {/* Estate Image */}
+                    <div className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] opacity-80">
+                        <Image
+                            src="/images/estates/Gleichen2.avif"
+                            alt="Uslar-Gleichen Castle"
+                            fill
+                            className="object-cover grayscale brightness-75 transition-transform duration-1000"
+                        />
+                    </div>
+
+                    {/* Caption */}
+                    <div className="w-full flex justify-start mt-4">
+                        <div className="flex items-center gap-3 text-[9px] md:text-[10px] tracking-[0.2em] text-[#B5A691]/50 font-din uppercase">
+                            <span>ESTATE IN THURINGIA, GERMANY</span>
+                            <span className="w-[1px] h-3 bg-[#B5A691]/50" />
+                            <span>USLAR-GLEICHEN CASTLE</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
 
 
             {/* Section 3: Contact & Footer */}
