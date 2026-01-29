@@ -61,7 +61,71 @@ export default function Bibliography() {
                 </div>
             </section>
 
-            {/* Section 2: Contact & Footer */}
+            {/* Section 2: Los Amos de la Valle */}
+            <section className="w-full flex flex-col items-center bg-black pt-32 pb-12 snap-start px-6">
+                <div className="max-w-md w-full items-center mx-auto flex flex-col px-2">
+
+                    {/* Section Title */}
+                    <div>
+                        <div className="mb-4 md:mb-6 text-left">
+                            <h2 className="text-[1.4rem] md:text-[1.6rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light opacity-90 uppercase">
+                                Los Amos de la Valle
+                            </h2>
+                        </div>
+
+                        {/* Descriptive Text */}
+                        <div className="max-w-[540px] text-[12px] md:text-[11.5px] text-left mb-12 md:mb-8">
+                            <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed">
+                                (Masters of the Valley) is a Venezuelan novel written by psychiatrist Francisco Herrera Luque and published in 1979. The novel describes Venezuelan life since the conquest of Caracas Valley until Simón Bolívar&apos;s baptism. The title makes reference to the Mantuano [es], noble families who had great control of this particular area.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Book Presentation Content */}
+                    <div className="w-full flex flex-col md:flex-row items-center md:items-stretch gap-8 md:gap-4">
+
+                        {/* Book Cover Image */}
+                        <div className="relative aspect-2/3 w-full max-w-[480px] opacity-90">
+                            <Image
+                                src="/images/bibliography/Biblio-1-Los-Amos-del-Valle-Francisco-Herrera-Luque.avif"
+                                alt="Los Amos de la Valle - Book Cover"
+                                fill
+                                className="object-contain sepia-[0.5] saturate-[0.3] grayscale-[0.5] brightness-[0.7]"
+                            />
+                        </div>
+
+                        {/* Download & Index Area - Aligned as per Ref */}
+                        <div className="flex flex-col items-center justify-between py-2 w-full max-w-[140px] mt-5">
+
+                            {/* PDF Download Area */}
+                            <div className="flex flex-col items-center w-full group cursor-pointer">
+                                <div className="relative w-20 h-26 opacity-70 group-hover:opacity-100 transition-opacity mb-4">
+                                    <Image
+                                        src="/images/bibliography/530aa01d8faf4d58a3e08e8a24c32836.avif"
+                                        alt="PDF Icon"
+                                        fill
+                                        className="object-contain sepia-[0.5]"
+                                    />
+                                </div>
+                                <div className="w-full h-[1px] bg-[#B5A691]/20 mb-4" />
+
+                                <span className="text-[8px] md:text-[8px] tracking-[0.1em] text-[#B5A691]/80 font-din uppercase opacity-70 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                                    DOWNLOAD FREE COPY
+                                </span>
+                            </div>
+
+                            {/* Large Index Number */}
+                            <div className="select-none mt-8 md:mt-0">
+                                <span className="text-[8rem] md:text-[10rem] font-helvetica font-light text-[#B5A691]/30 leading-none">
+                                    1
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
             <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative overflow-hidden px-4">
                 <div className="max-w-6xl w-full mx-auto px-8 flex flex-col items-center flex-grow justify-center relative">
 
