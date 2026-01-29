@@ -10,7 +10,7 @@ const menuItems = [
   { label: "ORDERS &\nDISTINCTIONS", id: "orders", href: "#orders" },
   { label: "SYMBOLS\nOF THE HOUSE", id: "symbols", href: "/symbols" },
   { label: "FAMILY ESTATES", id: "estates", href: "/estates" },
-  { label: "BIBLIOGRAPHY", id: "bibliography", href: "#bibliography" },
+  { label: "BIBLIOGRAPHY", id: "bibliography", href: "/bibliography" },
 ];
 
 export default function Home() {

@@ -16,7 +16,7 @@ const menuItems = [
     { label: "ORDERS &\nDISTINCTIONS", href: "#" },
     { label: "SYMBOLS\nOF THE HOUSE", href: "/symbols" },
     { label: "FAMILY ESTATES", href: "/estates" },
-    { label: "BIBLIOGRAPHY", href: "#" },
+    { label: "BIBLIOGRAPHY", href: "/bibliography" },
 ];
 
 export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {

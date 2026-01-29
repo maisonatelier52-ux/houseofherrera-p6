@@ -446,8 +446,6 @@ export default function Estates() {
             </section>
 
 
-
-
             {/* Section 3: Contact & Footer */}
             <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative overflow-hidden px-4">
                 <div className="max-w-6xl w-full mx-auto px-8 flex flex-col items-center flex-grow justify-center relative">
@@ -467,7 +465,7 @@ export default function Estates() {
                         <Link href="/symbols" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Symbols of the House</Link>
                         <Link href="/estates" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Family Estates</Link>
                         <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Orders and Distinctions</Link>
-                        <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Bibliography</Link>
+                        <Link href="/bibliography" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Bibliography</Link>
                     </nav>
 
                     {/* Connect Section */}
