@@ -22,7 +22,7 @@ export default function AncestorSection({
     name,
     date,
     decorativeImage,
-    decorativeImageStyles = "object-contain",
+    decorativeImageStyles = "object-contain sepia brightness-[0.9] opacity-90",
     decorativeContainerStyles = "w-full max-w-[320px] md:max-w-[584px] aspect-[584/74]",
     aboutName,
     isFirst = false,
