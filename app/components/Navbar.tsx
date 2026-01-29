@@ -13,18 +13,19 @@ export default function Navbar() {
             <div className="fixed top-0 left-0 w-full z-50 pointer-events-none bg-black/30 md:bg-black/10 pb-2">
                 <div className="max-w-5xl w-full mx-auto px-4 md:px-8">
                     <div className="w-full flex items-center justify-end gap-3 md:gap-4 text-[8px] md:text-[9px] tracking-[0.2em] text-[#B5A691]/60 font-medium uppercase pt-6 md:pt-8 font-din pointer-events-auto">
+                        <div className="flex items-center gap-2 md:gap-3 bg-black/70 md:bg-black/70 rounded-full px-3">
                         <Link href="/">
-                            <span className="cursor-pointer hover:text-[#B5A691] bg-black/40 md:bg-black/50 px-2 py-1 transition-colors">THE HOUSE OF HERRERA</span>
+                            <span className="cursor-pointer hover:text-[#B5A691]  px-2 py-1 transition-colors">THE HOUSE OF HERRERA</span>
                         </Link>
                         <span className="text-[#B5A691]/60">|</span>
                         <span
-                            className="cursor-pointer transition-colors hover:text-[#B5A691] bg-black/40 md:bg-black/50 px-2 py-1"
+                            className="cursor-pointer transition-colors hover:text-[#B5A691] px-2 py-1"
                             onClick={() => setIsMenuOpen(true)}
                         >
                             MENU
                         </span>
                         <div
-                            className="flex items-center gap-2 md:gap-3 h-2 w-10 md:w-12 justify-center bg-black/40 md:bg-black/50 cursor-pointer group"
+                            className="flex items-center gap-2 md:gap-3 h-2 w-10 md:w-12 justify-center  cursor-pointer group"
                             onClick={() => setIsMenuOpen(true)}
                         >
                             {[0, 1, 2].map((i) => (
@@ -44,6 +45,7 @@ export default function Navbar() {
                                     }}
                                 />
                             ))}
+                        </div>
                         </div>
                     </div>
                 </div>
