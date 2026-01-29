@@ -8,7 +8,7 @@ const menuItems = [
   { label: "ABOUT", id: "about", href: "/about" },
   { label: "HERRERA\nDYNASTY", id: "dynasty", href: "/dynasty" },
   { label: "ORDERS &\nDISTINCTIONS", id: "orders", href: "#orders" },
-  { label: "SYMBOLS\nOF THE HOUSE", id: "symbols", href: "#symbols" },
+  { label: "SYMBOLS\nOF THE HOUSE", id: "symbols", href: "/symbols" },
   { label: "FAMILY ESTATES", id: "estates", href: "#estates" },
   { label: "BIBLIOGRAPHY", id: "bibliography", href: "#bibliography" },
 ];
