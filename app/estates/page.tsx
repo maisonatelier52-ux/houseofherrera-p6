@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
+import { motion } from "framer-motion";
 
 export default function Estates() {
     const scrollToNext = () => {
@@ -93,7 +94,13 @@ export default function Estates() {
                     </div>
 
                     {/* Estate Image */}
-                    <div className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] opacity-80 mb-12 md:mb-16">
+                    <motion.div
+                        initial={{ opacity: 0, x: 60 }}
+                        whileInView={{ opacity: 0.8, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 2.4, ease: "easeOut" }}
+                        className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] mb-12 md:mb-16 overflow-hidden"
+                    >
                         <Image
                             src="/images/estates/Estates-1.avif"
                             alt="Hacienda De La Vega"
@@ -101,39 +108,50 @@ export default function Estates() {
                             className="object-cover grayscale brightness-75 transition-transform duration-1000"
                             priority
                         />
-                    </div>
+                    </motion.div>
 
                     {/* Dual Gallery Block */}
                     <div className="w-full max-w-5xl flex flex-col items-center">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full mb-6">
-                            <div className="relative aspect-[16/10] opacity-80">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full mb-6 text-left">
+                            <motion.div
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 0.8, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 1.8, ease: "easeOut", delay: 0.2 }}
+                                className="relative aspect-[16/10]"
+                            >
                                 <Image
                                     src="/images/estates/Estates-2.avif"
                                     alt="Hacienda Detail 1"
                                     fill
                                     className="object-cover grayscale brightness-75 transition-transform duration-1000"
                                 />
-                            </div>
-                            <div className="relative aspect-[16/10] opacity-80">
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 0.8, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 1.8, ease: "easeOut", delay: 0.4 }}
+                                className="relative aspect-[16/10]"
+                            >
                                 <Image
                                     src="/images/estates/Estates-3.avif"
                                     alt="Hacienda Detail 2"
                                     fill
                                     className="object-cover grayscale brightness-75 transition-transform duration-1000"
                                 />
-                            </div>
+                            </motion.div>
                         </div>
 
                         {/* Caption */}
                         <div className="w-full flex justify-start">
                             <div className="flex items-center gap-3 text-[9px] md:text-[10px] tracking-[0.2em] text-[#B5A691]/50 font-din uppercase">
-                                <span>Estate in Caracas</span>
+                                <span>ESTATE IN VENEZUELA</span>
                                 <span className="w-[1px] h-3 bg-[#B5A691]/50" />
-                                <span>Hacienda De La Vega</span>
+                                <span>HACIENDA DE LA VEGA / CARACAS</span>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
 
@@ -154,36 +172,37 @@ export default function Estates() {
                     {/* Section Title */}
                     <div className="mb-12 md:mb-16">
                         <h2 className="text-[2.2rem] md:text-[2.0rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light opacity-90">
-                            Castle St. Barbara,<br />
-                            Teguise in Lanzarote<br />
-                            (Canary Islands)
+                            Castle St. Barbara<br />
+                            (Teguise / Lanzarote)
                         </h2>
                     </div>
 
                     {/* Descriptive Text */}
                     <div className="max-w-xl text-[12px] md:text-[12.3px] text-left space-y-4 mb-12 md:mb-16">
-                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed">
-                            The Castle of Santa Barbara is the oldest fortification of the island of Lanzarote, to protect the historic capital of the island, the town of Teguise.
-                        </p>
-
-                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed">
+                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed text-center">
                             The Castillo Santa Barbara sits high up on Mount Guanapay overlooking Teguise, the old capital and the island of Lanzarote. King Felipe II ordered the castle to be built by Don Sanco de Herrera in the 16th Century as a watch tower to help protect the islanders from pirates and privateers such as Sir Francis Drake who was known as El Draque (The Dragon) to the Spanish.
                         </p>
 
-                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed">
+                        <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed text-center">
                             At the time, Teguise was both the capital of Lanzarote and the HQ of the Spanish administration of the whole Canary.
                         </p>
                     </div>
 
                     {/* Estate Image */}
-                    <div className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] opacity-80">
+                    <motion.div
+                        initial={{ opacity: 0, x: -60 }}
+                        whileInView={{ opacity: 0.8, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 2.4, ease: "easeOut" }}
+                        className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] border border-[#B5A691]/10 overflow-hidden"
+                    >
                         <Image
                             src="/images/estates/Estates-4.avif"
                             alt="Castle St. Barbara"
                             fill
                             className="object-cover grayscale brightness-75 transition-transform duration-1000"
                         />
-                    </div>
+                    </motion.div>
 
                     {/* Caption */}
                     <div className="w-full flex justify-start mt-4">
@@ -226,34 +245,52 @@ export default function Estates() {
                     </div>
 
                     {/* Estate Image */}
-                    <div className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] opacity-80 mb-8 md:mb-8">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 0.8 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 2.4, ease: "easeOut" }}
+                        className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] mb-8 md:mb-8 overflow-hidden"
+                    >
                         <Image
                             src="/images/estates/Estates-6.avif"
                             alt="Castle of Gleichen"
                             fill
                             className="object-cover grayscale brightness-75 transition-transform duration-1000"
                         />
-                    </div>
+                    </motion.div>
 
                     {/* Dual Gallery Block */}
                     <div className="w-full max-w-5xl flex flex-col items-center">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 w-full mb-6">
-                            <div className="relative aspect-[16/10] opacity-80">
+                            <motion.div
+                                initial={{ opacity: 0, x: -60 }}
+                                whileInView={{ opacity: 0.8, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 2.4, ease: "easeOut" }}
+                                className="relative aspect-[16/10] overflow-hidden"
+                            >
                                 <Image
                                     src="/images/estates/Estates-7.avif"
                                     alt="Gleichen Detail 1"
                                     fill
                                     className="object-cover grayscale brightness-75 transition-transform duration-1000"
                                 />
-                            </div>
-                            <div className="relative aspect-[16/10] opacity-80">
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0, x: 60 }}
+                                whileInView={{ opacity: 0.8, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 2.4, ease: "easeOut" }}
+                                className="relative aspect-[16/10] overflow-hidden"
+                            >
                                 <Image
                                     src="/images/estates/Estates-8.avif"
                                     alt="Gleichen Detail 2"
                                     fill
                                     className="object-cover grayscale brightness-75 transition-transform duration-1000"
                                 />
-                            </div>
+                            </motion.div>
                         </div>
 
                         {/* Caption */}
@@ -302,14 +339,20 @@ export default function Estates() {
                     </div>
 
                     {/* Estate Image */}
-                    <div className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] opacity-80">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 0.8 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 3.0, ease: "easeOut" }}
+                        className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] overflow-hidden"
+                    >
                         <Image
                             src="/images/estates/Estates-9.avif"
                             alt="Castle of Ampudia"
                             fill
                             className="object-cover grayscale brightness-75 transition-transform duration-1000"
                         />
-                    </div>
+                    </motion.div>
 
                     {/* Caption */}
                     <div className="w-full flex justify-start mt-4">
@@ -352,14 +395,20 @@ export default function Estates() {
                     </div>
 
                     {/* Estate Image */}
-                    <div className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] opacity-80">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 0.8 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 3.0, ease: "easeOut" }}
+                        className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] overflow-hidden"
+                    >
                         <Image
                             src="/images/estates/Estates-12.avif"
                             alt="Castle of Freudenthal"
                             fill
                             className="object-cover grayscale brightness-75 transition-transform duration-1000"
                         />
-                    </div>
+                    </motion.div>
 
                     {/* Caption */}
                     <div className="w-full flex justify-start mt-4">
@@ -388,7 +437,7 @@ export default function Estates() {
 
                     {/* Section Title */}
                     <div className="mb-12 md:mb-16">
-                        <h2 className="text-[2.2rem] md:text-[2.0rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light opacity-90">
+                        <h2 className="text-[2.2rem] md:text-[2.0rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light opacity-90 uppercase">
                             Uslar-Gleichen Castle<br />
                             (Gleichen, Germany)
                         </h2>
@@ -405,14 +454,20 @@ export default function Estates() {
                     </div>
 
                     {/* Estate Image */}
-                    <div className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] opacity-80">
+                    <motion.div
+                        initial={{ opacity: 0, x: -60 }}
+                        whileInView={{ opacity: 0.8, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 3.0, ease: "easeOut" }}
+                        className="relative w-full max-w-5xl aspect-[16/10] md:aspect-[16/9] overflow-hidden"
+                    >
                         <Image
                             src="/images/estates/Gleichen2.avif"
                             alt="Uslar-Gleichen Castle"
                             fill
                             className="object-cover grayscale brightness-75 transition-transform duration-1000"
                         />
-                    </div>
+                    </motion.div>
 
                     {/* Caption */}
                     <div className="w-full flex justify-start mt-4">
@@ -444,7 +499,6 @@ export default function Estates() {
                     </div>
                 </div>
             </section>
-
 
             {/* Section 3: Contact & Footer */}
             <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative overflow-hidden px-4">
