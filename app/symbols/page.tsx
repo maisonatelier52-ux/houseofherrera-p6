@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
+import { motion } from "framer-motion";
 
 export default function Symbols() {
     const scrollToNext = () => {
@@ -24,15 +25,21 @@ export default function Symbols() {
                 <div className="max-w-5xl w-full mx-auto">
                     <div className="flex flex-col items-center gap-1">
                         {/* Crest Image */}
-                        <div className="relative w-40 h-56 md:w-80 md:h-80">
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 0.8, scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1.0, ease: "easeOut" }}
+                            className="relative w-40 h-56 md:w-80 md:h-80"
+                        >
                             <Image
-                                src="/images/about/hofHP (1)-1.png"
+                                src="/images/about/hofHP (1)-1e.png"
                                 alt="Crest"
                                 fill
-                                className="object-contain saturate-60"
+                                className="object-contain sepia brightness-[0.9] opacity-90"
                                 priority
                             />
-                        </div>
+                        </motion.div>
 
                         {/* Title */}
                         <div>
@@ -78,7 +85,13 @@ export default function Symbols() {
                     </div>
 
                     {/* Main Coat of Arms Logo */}
-                    <div className="relative w-full max-w-[400px] md:max-w-[500px] aspect-square transition-all duration-1000">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.0, ease: "easeOut" }}
+                        className="relative w-full max-w-[400px] md:max-w-[500px] aspect-square transition-all duration-1000"
+                    >
                         <Image
                             src="/images/symbols/House of Herrera Coat of Arms 2.png"
                             alt="House of Herrera Coat of Arms"
@@ -86,7 +99,7 @@ export default function Symbols() {
                             className="object-contain sepia brightness-[0.6]"
                             priority
                         />
-                    </div>
+                    </motion.div>
 
                 </div>
 
@@ -112,22 +125,34 @@ export default function Symbols() {
 
                     {/* Dual Coat of Arms Display */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 w-full max-w-4xl px-4">
-                        <div className="relative aspect-square w-full">
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1.0, ease: "easeOut" }}
+                            className="relative aspect-square w-full"
+                        >
                             <Image
                                 src="/images/symbols/lanzarote cost of arms 1.png"
                                 alt="Lanzarote Coat of Arms Variant 1"
                                 fill
                                 className="object-contain sepia brightness-[0.4]"
                             />
-                        </div>
-                        <div className="relative aspect-square w-full">
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1.0, ease: "easeOut", delay: 0.3 }}
+                            className="relative aspect-square w-full"
+                        >
                             <Image
                                 src="/images/symbols/lanzarote coat of arms 2.png"
                                 alt="Lanzarote Coat of Arms Variant 2"
                                 fill
                                 className="object-contain sepia brightness-[0.6]"
                             />
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
 
@@ -149,14 +174,20 @@ export default function Symbols() {
                         </h2>
                     </div>
                     {/* Main Coat of Arms Logo */}
-                    <div className="relative w-full max-w-[400px] md:max-w-[500px] aspect-square transition-all duration-1000">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.0, ease: "easeOut" }}
+                        className="relative w-full max-w-[400px] md:max-w-[500px] aspect-square transition-all duration-1000"
+                    >
                         <Image
                             src="/images/symbols/herrera coat of arms.png"
                             alt="Herrera Coat of Arms"
                             fill
                             className="object-contain sepia brightness-[0.5]"
                         />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Block 4: Uslar Coat of Arms */}
@@ -177,14 +208,20 @@ export default function Symbols() {
                         </h2>
                     </div>
                     {/* Main Coat of Arms Logo */}
-                    <div className="relative w-full max-w-[400px] md:max-w-[420px] aspect-square transition-all duration-1000">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.0, ease: "easeOut" }}
+                        className="relative w-full max-w-[400px] md:max-w-[420px] aspect-square transition-all duration-1000"
+                    >
                         <Image
                             src="/images/symbols/uslar coat.png"
                             alt="Uslar Coat of Arms"
                             fill
                             className="object-contain sepia brightness-[0.5]"
                         />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Block 5: Gleichen Coat of Arms */}
@@ -205,14 +242,20 @@ export default function Symbols() {
                         </h2>
                     </div>
                     {/* Main Coat of Arms Logo */}
-                    <div className="relative w-full max-w-[400px] md:max-w-[500px] aspect-square transition-all duration-1000">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 2.0, ease: "easeOut" }}
+                        className="relative w-full max-w-[400px] md:max-w-[500px] aspect-square transition-all duration-1000"
+                    >
                         <Image
                             src="/images/symbols/gleichen coat of arms.png"
                             alt="Gleichen Coat of Arms"
                             fill
                             className="object-contain sepia brightness-[0.5]"
                         />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Block 6: Velutini Coat of Arms */}
@@ -233,14 +276,20 @@ export default function Symbols() {
                         </h2>
                     </div>
                     {/* Main Coat of Arms Logo */}
-                    <div className="relative w-full max-w-[400px] md:max-w-[500px] aspect-square transition-all duration-1000">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 2.0, ease: "easeOut" }}
+                        className="relative w-full max-w-[400px] md:max-w-[500px] aspect-square transition-all duration-1000"
+                    >
                         <Image
                             src="/images/symbols/velutini coat of arms.png"
                             alt="Velutini Coat of Arms"
                             fill
                             className="object-contain sepia brightness-[0.4]"
                         />
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
@@ -272,10 +321,10 @@ export default function Symbols() {
 
                         <div className="relative w-40 h-40 md:w-50 md:h-50">
                             <Image
-                                src="/images/about/hofHP (1)-1.png"
+                                src="/images/about/hofHP (1)-1e.png"
                                 alt="Crest"
                                 fill
-                                className="object-contain saturate-60"
+                                className="object-contain sepia brightness-[0.9] opacity-90"
                                 priority
                             />
                         </div>

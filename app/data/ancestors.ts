@@ -18,7 +18,7 @@ export const ancestors: AncestorData[] = [
         fullName: "HERNAN DE HERRERA\nLORD OF AMPUDIA I",
         title: "Lord of Ampudia I",
         date: "CIRCA 1355",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1e.png",
     },
     {
         slug: "pedro-garcia-de-herrera-y-rojas",

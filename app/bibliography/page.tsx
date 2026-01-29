@@ -26,10 +26,10 @@ export default function Bibliography() {
                         {/* Crest Image */}
                         <div className="relative w-40 h-56 md:w-80 md:h-80">
                             <Image
-                                src="/images/about/hofHP (1)-1.png"
+                                src="/images/about/hofHP (1)-1e.png"
                                 alt="Crest"
                                 fill
-                                className="object-contain saturate-60"
+                                className="object-contain sepia brightness-[0.9] opacity-90"
                                 priority
                             />
                         </div>
@@ -299,10 +299,10 @@ export default function Bibliography() {
 
                         <div className="relative w-40 h-40 md:w-50 md:h-50">
                             <Image
-                                src="/images/about/hofHP (1)-1.png"
+                                src="/images/about/hofHP (1)-1e.png"
                                 alt="Crest"
                                 fill
-                                className="object-contain saturate-60"
+                                className="object-contain sepia brightness-[0.9] opacity-90"
                                 priority
                             />
                         </div>
