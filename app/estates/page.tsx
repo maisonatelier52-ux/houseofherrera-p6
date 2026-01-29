@@ -422,6 +422,26 @@ export default function Estates() {
                             <span>USLAR-GLEICHEN CASTLE</span>
                         </div>
                     </div>
+
+                    {/* Historical Engraving Block */}
+                    <div className="w-full max-w-5xl flex flex-col items-center mt-4 md:mt-4">
+                        <div className="relative w-full aspect-[21/9] opacity-80 mb-6">
+                            <Image
+                                src="/images/estates/Uslar Gleichen.avif"
+                                alt="Uslar Gleichen Engraving"
+                                fill
+                                className="object-cover grayscale brightness-70"
+                            />
+                        </div>
+
+                        {/* Engraving Tag */}
+                        <div className="w-full flex justify-start">
+                            <div className="text-[8px] md:text-[9px] tracking-[0.15em] text-[#B5A691]/40 font-din uppercase leading-relaxed max-w-md text-left">
+                                COPPERPLATE ENGRAVING BY MATTHÄUS MERIAN DATING TO PRE-1650:<br />
+                                THE ALTE GLEICHEN (CENTRE), THE NEUE GLEICHEN (RIGHT)
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
