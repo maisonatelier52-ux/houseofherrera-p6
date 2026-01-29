@@ -37,7 +37,7 @@ export default function Symbols() {
                         {/* Title */}
                         <div>
                             <h1 className="text-xl md:text-3xl font-libre text-[#B5A691] tracking-tight">
-                                House of Herrera
+                                Coat of Arms
                             </h1>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ export default function Symbols() {
                             src="/images/about/HofH-Lower3.png"
                             alt="Ornate Header"
                             fill
-                            className="object-contain brightness-110"
+                            className="object-contain brightness-99"
                             priority
                         />
                     </div>
@@ -99,7 +99,7 @@ export default function Symbols() {
                             src="/images/about/HofH-Lower3.png"
                             alt="Ornate Header"
                             fill
-                            className="object-contain brightness-110"
+                            className="object-contain brightness-99"
                         />
                     </div>
 
@@ -128,6 +128,118 @@ export default function Symbols() {
                                 className="object-contain sepia brightness-[0.6]"
                             />
                         </div>
+                    </div>
+                </div>
+
+                {/* Block 3: Herrera Coat of Arms */}
+                <div className="max-w-5xl w-full mx-auto flex flex-col items-center mt-32 md:mt-48">
+                    {/* Ornate Divider Header */}
+                    <div className="mb-6 md:mb-10 relative w-full max-w-[320px] md:max-w-[584px] aspect-[584/74]">
+                        <Image
+                            src="/images/about/HofH-Lower3.png"
+                            alt="Ornate Header"
+                            fill
+                            className="object-contain brightness-99"
+                        />
+                    </div>
+                    {/* Section Title */}
+                    <div className="mb-12 md:mb-16 text-center">
+                        <h2 className="text-[1.2rem] md:text-[2.0rem] font-libre text-[#B5A691] leading-[1] tracking-tight font-light opacity-90 uppercase">
+                            Herrera Coat of Arms
+                        </h2>
+                    </div>
+                    {/* Main Coat of Arms Logo */}
+                    <div className="relative w-full max-w-[400px] md:max-w-[500px] aspect-square transition-all duration-1000">
+                        <Image
+                            src="/images/symbols/herrera coat of arms.png"
+                            alt="Herrera Coat of Arms"
+                            fill
+                            className="object-contain sepia brightness-[0.5]"
+                        />
+                    </div>
+                </div>
+
+                {/* Block 4: Uslar Coat of Arms */}
+                <div className="max-w-5xl w-full mx-auto flex flex-col items-center mt-32 md:mt-48">
+                    {/* Ornate Divider Header */}
+                    <div className="mb-6 md:mb-10 relative w-full max-w-[320px] md:max-w-[584px] aspect-[584/74]">
+                        <Image
+                            src="/images/about/HofH-Lower3.png"
+                            alt="Ornate Header"
+                            fill
+                            className="object-contain brightness-99"
+                        />
+                    </div>
+                    {/* Section Title */}
+                    <div className="mb-8 md:mb-12 text-center">
+                        <h2 className="text-[1.2rem] md:text-[2.0rem] font-libre text-[#B5A691] leading-[1] tracking-tight font-light opacity-90 uppercase">
+                            Uslar Coat of Arms
+                        </h2>
+                    </div>
+                    {/* Main Coat of Arms Logo */}
+                    <div className="relative w-full max-w-[400px] md:max-w-[420px] aspect-square transition-all duration-1000">
+                        <Image
+                            src="/images/symbols/uslar coat.png"
+                            alt="Uslar Coat of Arms"
+                            fill
+                            className="object-contain sepia brightness-[0.5]"
+                        />
+                    </div>
+                </div>
+
+                {/* Block 5: Gleichen Coat of Arms */}
+                <div className="max-w-5xl w-full mx-auto flex flex-col items-center mt-32 md:mt-48">
+                    {/* Ornate Divider Header */}
+                    <div className="mb-6 md:mb-10 relative w-full max-w-[320px] md:max-w-[584px] aspect-[584/74]">
+                        <Image
+                            src="/images/about/HofH-Lower3.png"
+                            alt="Ornate Header"
+                            fill
+                            className="object-contain brightness-99"
+                        />
+                    </div>
+                    {/* Section Title */}
+                    <div className="mb-12 md:mb-16 text-center">
+                        <h2 className="text-[1.2rem] md:text-[2.0rem] font-libre text-[#B5A691] leading-[1] tracking-tight font-light opacity-90 uppercase">
+                            Gleichen Coat of Arms
+                        </h2>
+                    </div>
+                    {/* Main Coat of Arms Logo */}
+                    <div className="relative w-full max-w-[400px] md:max-w-[500px] aspect-square transition-all duration-1000">
+                        <Image
+                            src="/images/symbols/gleichen coat of arms.png"
+                            alt="Gleichen Coat of Arms"
+                            fill
+                            className="object-contain sepia brightness-[0.5]"
+                        />
+                    </div>
+                </div>
+
+                {/* Block 6: Velutini Coat of Arms */}
+                <div className="max-w-5xl w-full mx-auto flex flex-col items-center mt-32 md:mt-48">
+                    {/* Ornate Divider Header */}
+                    <div className="mb-6 md:mb-10 relative w-full max-w-[320px] md:max-w-[584px] aspect-[584/74]">
+                        <Image
+                            src="/images/about/HofH-Lower3.png"
+                            alt="Ornate Header"
+                            fill
+                            className="object-contain brightness-99"
+                        />
+                    </div>
+                    {/* Section Title */}
+                    <div className="mb-12 md:mb-16 text-center">
+                        <h2 className="text-[1.2rem] md:text-[2.0rem] font-libre text-[#B5A691] leading-[1] tracking-tight font-light opacity-90 uppercase">
+                            Velutini Coat of Arms
+                        </h2>
+                    </div>
+                    {/* Main Coat of Arms Logo */}
+                    <div className="relative w-full max-w-[400px] md:max-w-[500px] aspect-square transition-all duration-1000">
+                        <Image
+                            src="/images/symbols/velutini coat of arms.png"
+                            alt="Velutini Coat of Arms"
+                            fill
+                            className="object-contain sepia brightness-[0.4]"
+                        />
                     </div>
                 </div>
             </section>
