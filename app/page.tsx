@@ -28,7 +28,7 @@ export default function Home() {
               playsInline
               className="w-full h-full object-cover opacity-90"
             >
-              <source src="/covervideo.mp4" type="video/mp4" />
+              <source src="/covervideo2.mp4" type="video/mp4" />
             </video>
             <div className="paper-overlay" />
             <div
@@ -40,7 +40,7 @@ export default function Home() {
                 height: '100%',
                 zIndex: 5,
                 pointerEvents: 'none',
-                background: 'radial-gradient(circle, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.15) 100%)'
+                background: 'radial-gradient(circle, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 1) 100%)'
               }}
             />
           </div>
@@ -59,21 +59,21 @@ export default function Home() {
                   {item.id === "about" ? (
                     <Link
                       href={item.href}
-                      className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.2em] md:tracking-wider text-[0.55rem] md:text-[0.60rem] font-light text-black/60 hover:text-black text-center md:text-left"
+                      className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.2em] md:tracking-wider text-[0.55rem] md:text-[0.60rem] font-light text-white/20 hover:text-white/40 text-center md:text-left"
                     >
                       {item.label}
                     </Link>
                   ) : (
                     <a
                       href={item.href}
-                      className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.2em] md:tracking-wider text-[0.55rem] md:text-[0.60rem] font-light text-black/60 hover:text-black text-center md:text-left"
+                      className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.2em] md:tracking-wider text-[0.55rem] md:text-[0.60rem] font-light text-white/20 hover:text-white/40 text-center md:text-left"
                     >
                       {item.label}
                     </a>
                   )}
                   {index < menuItems.length - 1 && (
                     <div
-                      className="w-16 md:w-[88px] h-[1px] my-4 md:my-[1.5rem] bg-[repeating-linear-gradient(90deg,rgba(0,0,0,0.76)_1px,rgba(0,0,0,0.76)_1px,transparent_4px,transparent_5px)]"
+                      className="w-16 brightness-[0.5] md:w-[88px] h-[1px] my-4 md:my-[1.5rem] bg-[repeating-linear-gradient(90deg,rgba(255,255,255,0.76)_1px,rgba(255,255,255,0.76)_1px,transparent_4px,transparent_5px)]"
                     />
                   )}
                 </motion.div>
@@ -89,7 +89,7 @@ export default function Home() {
               transition={{ duration: 1.5, delay: 1 }}
             >
               <p
-                className="text-[8px] md:text-[9px] tracking-[0.1em] text-black/50 font-light uppercase font-din"
+                className="text-[8px] md:text-[9px] tracking-[0.1em] text-white/20 font-light uppercase font-din"
               >
                 ©2025 HOUSE OF HERRERA
               </p>

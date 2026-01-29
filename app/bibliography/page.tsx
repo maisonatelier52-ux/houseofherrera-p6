@@ -126,6 +126,152 @@ export default function Bibliography() {
 
                 </div>
             </section>
+
+            {/* Section 3: Don Augustin de Herrera y Rojas */}
+            <section className="w-full flex flex-col items-center bg-black pt-32 pb-12 snap-start px-6">
+                <div className="max-w-md w-full items-center mx-auto flex flex-col px-2">
+
+                    {/* Section Title */}
+                    <div>
+                        <div className="mb-4 md:mb-6 text-left">
+                            <h2 className="text-[1.4rem] md:text-[1.6rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light opacity-90 uppercase">
+                                Don Agustin de Herrera y Rojas
+                            </h2>
+                        </div>
+
+                        {/* Descriptive Text */}
+                        <div className="max-w-[540px] text-[12px] md:text-[11.5px] text-left mb-12 md:mb-8">
+                            <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed">
+                                &quot;More than the history of the masters of the valley of Caracas, this narrative is the history of Venezuela since Diego de Losada founded Santiago de León de Caracas in 1567 until the birth of Simón Bolívar y Palacios in 1783. A detailed chronicle of the life of the caraqueños since the conquistadors pacified&quot;
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Book Presentation Content */}
+                    <div className="w-full flex flex-col md:flex-row items-center md:items-stretch gap-8 md:gap-4">
+
+                        {/* Book Cover Image */}
+                        <div className="relative aspect-2/3 w-full max-w-[480px] opacity-90">
+                            <Image
+                                src="/images/bibliography/Biblio-2-Don-Agustin-de-Herrera-y-Rojas.avif"
+                                alt="Don Augustin de Herrera y Rojas - Book Cover"
+                                fill
+                                className="object-contain sepia-[0.5] saturate-[0.3] grayscale-[0.5] brightness-[0.7]"
+                            />
+                        </div>
+
+                        {/* Download & Index Area - Aligned as per Ref */}
+                        <div className="flex flex-col items-center justify-between py-2 w-full max-w-[140px] mt-5">
+
+                            {/* PDF Download Area */}
+                            <div className="flex flex-col items-center w-full group cursor-pointer">
+                                <div className="relative w-20 h-26 opacity-70 group-hover:opacity-100 transition-opacity mb-4">
+                                    <Image
+                                        src="/images/bibliography/530aa01d8faf4d58a3e08e8a24c32836.avif"
+                                        alt="PDF Icon"
+                                        fill
+                                        className="object-contain sepia-[0.5]"
+                                    />
+                                </div>
+                                <div className="w-full h-[1px] bg-[#B5A691]/20 mb-4" />
+
+                                <span className="text-[8px] md:text-[8px] tracking-[0.1em] text-[#B5A691]/80 font-din uppercase opacity-70 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                                    DOWNLOAD FREE COPY
+                                </span>
+                            </div>
+
+                            {/* Large Index Number */}
+                            <div className="select-none mt-8 md:mt-0">
+                                <span className="text-[8rem] md:text-[10rem] font-helvetica font-light text-[#B5A691]/30 leading-none">
+                                    2
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            {/* Section 4: La Vega */}
+            <section className="w-full flex flex-col items-center bg-black pt-32 pb-12 snap-start px-6">
+                <div className="max-w-md w-full items-center mx-auto flex flex-col px-2">
+
+                    {/* Section Title */}
+                    <div className="w-full">
+                        <div className="mb-4 md:mb-6 text-left">
+                            <h2 className="text-[1.4rem] md:text-[1.6rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light opacity-90 uppercase">
+                                La Vega
+                            </h2>
+                        </div>
+
+                        {/* Descriptive Text */}
+                        <div className="max-w-[540px] text-[12px] md:text-[11.5px] text-left mb-12 md:mb-12">
+                            <p className="font-helvetica font-light tracking-wide text-[#B5A691]/60 leading-relaxed italic">
+                                &quot;Fernandez de Leon also received an important command on the banks of the Tuy River, now Miranda State and part of the Caracas metropolis, located in Corocorumo and Llanos de Salamanca. Later it was ceded to Agustin Herrera De Sarmiento Y Rojas De Ayala (1569-1632), descendant of the Castilian conqueror, who in the 15th century declared himself King and Lord of the 7 Canary Islands.&quot;
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Presentation Content */}
+                    <div className="w-full flex flex-col md:flex-row items-center md:items-stretch gap-8 md:gap-4">
+
+                        {/* Visual Presentation Block */}
+                        <div className="w-full max-w-[480px]">
+                            {/* Historical Photo */}
+                            <div className="relative aspect-video w-full opacity-90 mb-0">
+                                <Image
+                                    src="/images/bibliography/Biblio-3-La-vega (1).avif"
+                                    alt="La Vega - Historical Scene"
+                                    fill
+                                    className="object-cover sepia-[0.3] saturate-[0.4] grayscale-[0.2] brightness-[0.8]"
+                                />
+                            </div>
+
+                            {/* Title Card */}
+                            <div className="w-full bg-[#B5A691]/8 py-12 px-8 flex flex-col items-center justify-center text-center">
+                                <h3 className="text-[1.4rem] font-libre text-[#B5A691] leading-tight mb-2 opacity-90">
+                                    La Vega
+                                </h3>
+                                <p className="text-[10px] tracking-[0.05em] text-[#B5A691]/50 font-din uppercase font-light">
+                                    Agustin Herrera De Sarmiento<br />
+                                    Y Rojas De Ayala (1569-1632)
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Download & Index Area */}
+                        <div className="flex flex-col items-center justify-between py-2 w-full max-w-[140px] mt-5">
+
+                            {/* PDF Download Area */}
+                            <div className="flex flex-col items-center w-full group cursor-pointer">
+                                <div className="relative w-20 h-26 opacity-70 group-hover:opacity-100 transition-opacity mb-4">
+                                    <Image
+                                        src="/images/bibliography/530aa01d8faf4d58a3e08e8a24c32836.avif"
+                                        alt="PDF Icon"
+                                        fill
+                                        className="object-contain sepia-[0.5]"
+                                    />
+                                </div>
+                                <div className="w-full h-[1px] bg-[#B5A691]/20 mb-4" />
+
+                                <span className="text-[8px] md:text-[8px] tracking-[0.1em] text-[#B5A691]/80 font-din uppercase opacity-70 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                                    DOWNLOAD FREE COPY
+                                </span>
+                            </div>
+
+                            {/* Large Index Number */}
+                            <div className="select-none mt-8 md:mt-0">
+                                <span className="text-[8rem] md:text-[10rem] font-helvetica font-light text-[#B5A691]/30 leading-none">
+                                    3
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
             <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative overflow-hidden px-4">
                 <div className="max-w-6xl w-full mx-auto px-8 flex flex-col items-center flex-grow justify-center relative">
 
