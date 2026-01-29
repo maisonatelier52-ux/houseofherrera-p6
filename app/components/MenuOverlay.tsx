@@ -15,7 +15,7 @@ const menuItems = [
     { label: "HERRERA\nDYNASTY", href: "/dynasty" },
     { label: "ORDERS &\nDISTINCTIONS", href: "#" },
     { label: "SYMBOLS\nOF THE HOUSE", href: "/symbols" },
-    { label: "FAMILY ESTATES", href: "#" },
+    { label: "FAMILY ESTATES", href: "/estates" },
     { label: "BIBLIOGRAPHY", href: "#" },
 ];
 

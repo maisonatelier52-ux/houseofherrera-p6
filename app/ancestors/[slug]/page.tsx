@@ -84,8 +84,8 @@ export default function AncestorPage({ params }: { params: Promise<{ slug: strin
                     {/* Additional Images Row (Optional) */}
                     {ancestor.historyImages && ancestor.historyImages.length > 0 && (
                         <div className={`w-full max-w-4xl opacity-80 mb-12 gap-12 ${ancestor.historyImages.length === 1
-                                ? "flex justify-center"
-                                : "grid grid-cols-1 md:grid-cols-2"
+                            ? "flex justify-center"
+                            : "grid grid-cols-1 md:grid-cols-2"
                             }`}>
                             {ancestor.historyImages.map((img, i) => (
                                 <div key={i} className={`relative aspect-[2/3] ${ancestor.historyImages?.length === 1 ? "w-full max-w-md" : "w-full"
@@ -131,7 +131,7 @@ export default function AncestorPage({ params }: { params: Promise<{ slug: strin
                         <Link href="/about" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">About</Link>
                         <Link href="/dynasty" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Dynasty</Link>
                         <Link href="/symbols" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Symbols of the House</Link>
-                        <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Family Estates</Link>
+                        <Link href="/estates" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Family Estates</Link>
                         <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Orders and Distinctions</Link>
                         <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Bibliography</Link>
                     </nav>
