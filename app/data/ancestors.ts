@@ -196,7 +196,7 @@ export const ancestors: AncestorData[] = [
         crestImage: "/images/about/hofHP (1)-1ee.png",
         portraitImage: "/images/about/image 24.png",
         historyImages: [
-            "/images/Julio Jose Herrera.avif"
+            "/images/Julio jose herrera.avif"
         ],
         bioParagraphs: [
             "Born in Austria. Died in Cartagena."
