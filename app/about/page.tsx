@@ -137,8 +137,8 @@ export default function About() {
 
                     {/* Sub Navigation */}
                     <nav className="flex flex-wrap items-center justify-center gap-4 md:gap-88 text-[10px] md:text-[12px] tracking-[0.2em] text-[#B5A691] font-extralight uppercase border-t border-[#B5A691]/80 pt-4 w-full max-w-2xl font-din">
-                        <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors">ORDERS & DISTINCTIONS</span>
-                        <span className="cursor-pointer hover:text-[#B5A691]/60 transition-colors">BIBLIOGRAPHY</span>
+                        <Link href="/orders-and-distinctions" className="cursor-pointer hover:text-[#B5A691]/60 transition-colors">ORDERS & DISTINCTIONS</Link>
+                        <Link href="/bibliography" className="cursor-pointer hover:text-[#B5A691]/60 transition-colors">BIBLIOGRAPHY</Link>
                     </nav>
 
                     {/* Bottom Chevron icon */}
@@ -168,7 +168,7 @@ export default function About() {
                         <Link href="/dynasty" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Dynasty</Link>
                         <Link href="/symbols" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Symbols of the House</Link>
                         <Link href="/estates" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Family Estates</Link>
-                        <Link href="#" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Orders and Distinctions</Link>
+                        <Link href="/orders-and-distinctions" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors whitespace-nowrap">Orders and Distinctions</Link>
                         <Link href="/bibliography" className="cursor-pointer hover:text-[#B5A691]/100 transition-colors">Bibliography</Link>
                     </nav>
 

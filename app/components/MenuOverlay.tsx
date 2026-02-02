@@ -13,7 +13,7 @@ interface MenuOverlayProps {
 const menuItems = [
     { label: "ABOUT", href: "/about" },
     { label: "HERRERA\nDYNASTY", href: "/dynasty" },
-    { label: "ORDERS &\nDISTINCTIONS", href: "#" },
+    { label: "ORDERS &\nDISTINCTIONS", href: "/orders-and-distinctions" },
     { label: "SYMBOLS\nOF THE HOUSE", href: "/symbols" },
     { label: "FAMILY ESTATES", href: "/estates" },
     { label: "BIBLIOGRAPHY", href: "/bibliography" },
