@@ -127,7 +127,7 @@ export default function OrdersAndDistinctions() {
 
                     {/* Description */}
                     <div className="max-w-xl mb-6">
-                        <p className="text-[12px] md:text-[14px] font-helvetica font-extralight tracking-tight text-[#B5A691] leading-relaxed">
+                        <p className="text-[12px] md:text-[14px] font-helvetica font-extralight tracking-tight text-[#B5A691] leading-relaxed text-left">
                             The Marquis de Herrera and Vallehermoso is a Spanish peerage created the 20 of January of 1750 by Fernando VI with the previous vizcondado of Chiclin in favor of José de Herrera and Juan Zarzosa, a resident of Trujillo (Peru).
                         </p>
                     </div>
@@ -137,6 +137,81 @@ export default function OrdersAndDistinctions() {
                         <Image
                             src="/images/symbols/MARQUISATE OF HERRERA-2.png"
                             alt="Marquisate of Herrera and Vallehermoso Coat of Arms"
+                            fill
+                            className="object-contain sepia brightness-[0.6]"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            {/* Section 2, Block 3: Conde de Palomar */}
+            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative px-6 md:px-8 bg-black mt-22 pt-8">
+                <div className="max-w-4xl w-full mx-auto flex flex-col items-center text-center">
+
+                    {/* Ornate Divider */}
+                    <div className="mb-4 md:mb-6 relative w-full max-w-[320px] md:max-w-[584px] aspect-[584/74]">
+                        <Image
+                            src="/images/about/HofH-Lower3.png"
+                            alt="Ornate Divider"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+
+                    {/* Title */}
+                    <div className="mb-6">
+                        <h2 className="text-[2rem] md:text-[2rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light uppercase">
+                            CONDE<br />
+                            DE PALOMAR
+                        </h2>
+                    </div>
+
+                    {/* Coat of Arms Image */}
+                    <div className="relative w-full max-w-[480px] aspect-square">
+                        <Image
+                            src="/images/symbols/CONDE DE PALOMAR.png"
+                            alt="Conde de Palomar Coat of Arms"
+                            fill
+                            className="object-contain sepia brightness-[0.6]"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            {/* Section 2, Block 4: Marquisate of Torre Casa */}
+            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative px-6 md:px-8 bg-black mt-22 pt-8">
+                <div className="max-w-4xl w-full mx-auto flex flex-col items-center text-center">
+
+                    {/* Ornate Divider */}
+                    <div className="mb-4 md:mb-6 relative w-full max-w-[320px] md:max-w-[584px] aspect-[584/74]">
+                        <Image
+                            src="/images/about/HofH-Lower3.png"
+                            alt="Ornate Divider"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+
+                    {/* Title */}
+                    <div className="mb-6">
+                        <h2 className="text-[2rem] md:text-[2rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light uppercase">
+                            MARQUISATE OF<br />
+                            TORRE CASA
+                        </h2>
+                    </div>
+
+                    {/* Description */}
+                    <div className="max-w-xl mb-6">
+                        <p className="text-[12px] md:text-[14px] font-helvetica font-extralight tracking-tight text-[#B5A691] leading-relaxed text-left">
+                            From 1910 to 1992 to Reinaldo Herrera Uslar (1910-1972), IV marqués de Torre Casa and then his son Reinaldo Herrera Guevara, V marqués de Torre Casa.
+                        </p>
+                    </div>
+
+                    {/* Coat of Arms Image */}
+                    <div className="relative w-full max-w-[420px] aspect-square">
+                        <Image
+                            src="/images/symbols/MARQUISATE OF TORRE CASA.png"
+                            alt="Marquisate of Torre Casa Coat of Arms"
                             fill
                             className="object-contain sepia brightness-[0.6]"
                         />
