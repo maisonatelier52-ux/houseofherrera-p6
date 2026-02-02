@@ -18,7 +18,7 @@ export const ancestors: AncestorData[] = [
         fullName: "HERNAN DE HERRERA\nLORD OF AMPUDIA I",
         title: "Lord of Ampudia I",
         date: "CIRCA 1355",
-        crestImage: "/images/about/hofHP (1)-1e.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
     },
     {
         slug: "pedro-garcia-de-herrera-y-rojas",
@@ -26,7 +26,7 @@ export const ancestors: AncestorData[] = [
         fullName: "PEDRO GARCIA\nDE HERRERA Y ROJAS",
         title: "House of Herrera",
         date: "1390 - 1455",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
         historyImages: [
             "/images/Herrera1.avif"
         ],
@@ -41,7 +41,7 @@ export const ancestors: AncestorData[] = [
         fullName: "DIEGO GARCIA\nDE HERRERA Y AYALA",
         title: "House of Herrera",
         date: "CIRCA 1417",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
         bioParagraphs: [
             "Towards the early 15th century, Diego Garcia de Herrera y Ayala (1417-1485) conquered the Canary Islands. Nicknamed the King of the Canaries, he laid the very foundation for the Herrera family, elevating their stature and establishing the social influence the family holds to this day.  ",
         ]
@@ -52,7 +52,7 @@ export const ancestors: AncestorData[] = [
         fullName: "AGUSTIN DE HERRERA\nY ROJAS AYALA",
         title: "House of Herrera",
         date: "1569 - 1632",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
         historyImages: [
             "/images/Agustin De Herrera.avif"
         ],
@@ -69,7 +69,7 @@ export const ancestors: AncestorData[] = [
         fullName: "JUAN SARMIENTO DE HERRERA\nY FERNANDEZ PACHEGO",
         title: "House of Herrera",
         date: "1607 - 1664",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
         historyImages: [
             "/images/juan.avif"
         ],
@@ -85,7 +85,7 @@ export const ancestors: AncestorData[] = [
         fullName: "AGUSTIN NICOLAS\nDE HERRERA Y LOAISA",
         title: "House of Herrera",
         date: "1633 - 1695",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
     },
     {
         slug: "francisco-carlos-herrera-y-ascanio",
@@ -93,7 +93,7 @@ export const ancestors: AncestorData[] = [
         fullName: "FRANCISCO CARLOS\nHERRERA Y ASCANIO",
         title: "House of Herrera",
         date: "1671 - 1730",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
         portraitImage: "/images/francisco.jpg",
         bioParagraphs: [
             "Captain, Master of the Field",
@@ -106,7 +106,7 @@ export const ancestors: AncestorData[] = [
         fullName: "JUAN MANUEL DE\nHERRERA Y MISONES",
         title: "House of Herrera",
         date: "1712 - 1767",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
     },
     {
         slug: "martin-eugenio-de-herrera-y-rada",
@@ -114,7 +114,7 @@ export const ancestors: AncestorData[] = [
         fullName: "MARTIN EUGENIO\nDE HERRERA Y RADA",
         title: "House of Herrera",
         date: "1754 - 1810",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
         historyImages: [
             "/images/martin eugenio.avif"
         ],
@@ -130,7 +130,7 @@ export const ancestors: AncestorData[] = [
         fullName: "MARIANO JOSE HERRERA\nY RODRIGUEZ DEL TORO IBARA",
         title: "House of Herrera",
         date: "CIRCA 1789",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
         bioParagraphs: [
             "Caracas, Venezuela. Havana, Cuba",
             "Santo Domingo",
@@ -143,7 +143,7 @@ export const ancestors: AncestorData[] = [
         fullName: "JOSE DE HERRERA\nY IROGOYEN",
         title: "House of Herrera",
         date: "CIRCA 1813",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
         bioParagraphs: [
             "Spain",
         ]
@@ -154,7 +154,7 @@ export const ancestors: AncestorData[] = [
         fullName: "JOSE DE HERRERA\nMANRIQUE DE LARA",
         title: "House of Herrera",
         date: "CIRCA 1880",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
         historyImages: [
             "/images/jose de herrera.avif"
         ],
@@ -170,7 +170,7 @@ export const ancestors: AncestorData[] = [
         fullName: "JOSE HERRERA\nVON USLAR GLEICHEN",
         title: "House of Herrera",
         date: "CIRCA 1906",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
         portraitImage: "/images/about/image 24.png",
         historyImages: [
             "/images/about/Herrera8.avif",
@@ -193,7 +193,7 @@ export const ancestors: AncestorData[] = [
         fullName: "JULIO JOSE HERRERA VELUTINI\nVON USLAR",
         title: "House of Herrera",
         date: "1945 - 2019",
-        crestImage: "/images/about/hofHP (1)-1.png",
+        crestImage: "/images/about/hofHP (1)-1ee.png",
         portraitImage: "/images/about/image 24.png",
         historyImages: [
             "/images/Julio Jose Herrera.avif"

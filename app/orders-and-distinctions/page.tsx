@@ -92,14 +92,20 @@ export default function OrdersAndDistinctions() {
                     </div>
 
                     {/* Coat of Arms Image */}
-                    <div className="relative w-full max-w-[420px] aspect-square">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.0, ease: "easeOut" }}
+                        className="relative w-full max-w-[420px] aspect-square"
+                    >
                         <Image
                             src="/images/symbols/lanzarote cost of arms 1.png"
                             alt="Marquisate de Lanzarote Coat of Arms"
                             fill
                             className="object-contain sepia brightness-[0.6]"
                         />
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
@@ -133,14 +139,20 @@ export default function OrdersAndDistinctions() {
                     </div>
 
                     {/* Coat of Arms Image */}
-                    <div className="relative w-full max-w-[480px] aspect-square">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.0, ease: "easeOut" }}
+                        className="relative w-full max-w-[480px] aspect-square"
+                    >
                         <Image
                             src="/images/symbols/MARQUISATE OF HERRERA-2.png"
                             alt="Marquisate of Herrera and Vallehermoso Coat of Arms"
                             fill
                             className="object-contain sepia brightness-[0.6]"
                         />
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
@@ -167,14 +179,20 @@ export default function OrdersAndDistinctions() {
                     </div>
 
                     {/* Coat of Arms Image */}
-                    <div className="relative w-full max-w-[480px] aspect-square">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.0, ease: "easeOut" }}
+                        className="relative w-full max-w-[480px] aspect-square"
+                    >
                         <Image
                             src="/images/symbols/CONDE DE PALOMAR.png"
                             alt="Conde de Palomar Coat of Arms"
                             fill
                             className="object-contain sepia brightness-[0.6]"
                         />
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
@@ -208,14 +226,20 @@ export default function OrdersAndDistinctions() {
                     </div>
 
                     {/* Coat of Arms Image */}
-                    <div className="relative w-full max-w-[420px] aspect-square">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.0, ease: "easeOut" }}
+                        className="relative w-full max-w-[420px] aspect-square"
+                    >
                         <Image
                             src="/images/symbols/MARQUISATE OF TORRE CASA.png"
                             alt="Marquisate of Torre Casa Coat of Arms"
                             fill
                             className="object-contain sepia brightness-[0.6]"
                         />
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
@@ -242,14 +266,20 @@ export default function OrdersAndDistinctions() {
                     </div>
 
                     {/* Coat of Arms Image */}
-                    <div className="relative w-full max-w-[460px] aspect-square">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.0, ease: "easeOut" }}
+                        className="relative w-full max-w-[460px] aspect-square"
+                    >
                         <Image
                             src="/images/symbols/Coat_of_Arms_of_Fuerteventurasvg.png"
                             alt="Marques de Fuerteventura Coat of Arms"
                             fill
                             className="object-contain sepia brightness-[0.6]"
                         />
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
@@ -276,14 +306,20 @@ export default function OrdersAndDistinctions() {
                     </div>
 
                     {/* Coat of Arms Image */}
-                    <div className="relative w-full max-w-[460px] aspect-square">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.0, ease: "easeOut" }}
+                        className="relative w-full max-w-[460px] aspect-square"
+                    >
                         <Image
                             src="/images/symbols/Ho1copy.png"
                             alt="Marques de Herrera Coat of Arms"
                             fill
                             className="object-contain sepia brightness-[0.6]"
                         />
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
@@ -313,15 +349,21 @@ export default function OrdersAndDistinctions() {
                     <div className="flex flex-col items-center gap-0 z-10">
                         <span className="text-[8px] md:text-[9px] tracking-[0.2em] text-[#B5A691] font-light font-din opacity-80 uppercase">CONNECT WITH US</span>
 
-                        <div className="relative w-40 h-40 md:w-50 md:h-50">
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 0.9, scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1.2, ease: "easeOut" }}
+                            className="relative w-40 h-40 md:w-50 md:h-50"
+                        >
                             <Image
                                 src="/images/about/hofHP (1)-1ee.png"
                                 alt="Crest"
                                 fill
-                                className="object-contain brightness-[0.9] opacity-90"
+                                className="object-contain brightness-[0.9]"
                                 priority
                             />
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
 
