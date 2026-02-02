@@ -219,6 +219,74 @@ export default function OrdersAndDistinctions() {
                 </div>
             </section>
 
+            {/* Section 2, Block 5: Marques de Fuerteventura */}
+            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative px-6 md:px-8 bg-black mt-22 pt-8">
+                <div className="max-w-4xl w-full mx-auto flex flex-col items-center text-center">
+
+                    {/* Ornate Divider */}
+                    <div className="mb-4 md:mb-6 relative w-full max-w-[320px] md:max-w-[584px] aspect-[584/74]">
+                        <Image
+                            src="/images/about/HofH-Lower3.png"
+                            alt="Ornate Divider"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+
+                    {/* Title */}
+                    <div className="mb-8">
+                        <h2 className="text-[2rem] md:text-[2rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light uppercase">
+                            MARQUES DE<br />
+                            FUERTEVENTURA
+                        </h2>
+                    </div>
+
+                    {/* Coat of Arms Image */}
+                    <div className="relative w-full max-w-[460px] aspect-square">
+                        <Image
+                            src="/images/symbols/Coat_of_Arms_of_Fuerteventurasvg.png"
+                            alt="Marques de Fuerteventura Coat of Arms"
+                            fill
+                            className="object-contain sepia brightness-[0.6]"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            {/* Section 2, Block 6: Marques de Herrera */}
+            <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative px-6 md:px-8 bg-black mt-22 pt-6">
+                <div className="max-w-4xl w-full mx-auto flex flex-col items-center text-center">
+
+                    {/* Ornate Divider */}
+                    <div className="mb-4 md:mb-6 relative w-full max-w-[320px] md:max-w-[584px] aspect-[584/74]">
+                        <Image
+                            src="/images/about/HofH-Lower3.png"
+                            alt="Ornate Divider"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+
+                    {/* Title */}
+                    <div className="mb-8">
+                        <h2 className="text-[2rem] md:text-[2rem] font-libre text-[#B5A691] leading-[1.1] tracking-tight font-light uppercase">
+                            MARQUES DE<br />
+                            HERRERA
+                        </h2>
+                    </div>
+
+                    {/* Coat of Arms Image */}
+                    <div className="relative w-full max-w-[460px] aspect-square">
+                        <Image
+                            src="/images/symbols/Ho1copy.png"
+                            alt="Marques de Herrera Coat of Arms"
+                            fill
+                            className="object-contain sepia brightness-[0.6]"
+                        />
+                    </div>
+                </div>
+            </section>
+
             {/* Section 3: Navigation & Footer */}
             <section className="min-h-screen w-full flex flex-col items-center justify-center snap-start relative overflow-hidden px-4 bg-[#0A0A0A]">
                 <div className="max-w-6xl w-full mx-auto px-8 flex flex-col items-center flex-grow justify-center relative">
