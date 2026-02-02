@@ -85,20 +85,30 @@ export default function Bibliography() {
                     <div className="w-full flex flex-col md:flex-row items-center md:items-stretch gap-8 md:gap-4">
 
                         {/* Book Cover Image */}
-                        <div className="relative aspect-2/3 w-full max-w-[480px] opacity-90">
+                        <a
+                            href="/files/Los-Amos-del-Valle-Francisco-Herrera-Luque.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="relative aspect-2/3 w-full max-w-[480px] opacity-90 cursor-pointer block hover:opacity-100 transition-opacity"
+                        >
                             <Image
                                 src="/images/bibliography/Biblio-1-Los-Amos-del-Valle-Francisco-Herrera-Luque.avif"
                                 alt="Los Amos de la Valle - Book Cover"
                                 fill
                                 className="object-contain sepia-[0.5] saturate-[0.3] grayscale-[0.5] brightness-[0.7]"
                             />
-                        </div>
+                        </a>
 
                         {/* Download & Index Area - Aligned as per Ref */}
                         <div className="flex flex-col items-center justify-between py-2 w-full max-w-[140px] mt-5">
 
                             {/* PDF Download Area */}
-                            <div className="flex flex-col items-center w-full group cursor-pointer">
+                            <a
+                                href="/files/Los-Amos-del-Valle-Francisco-Herrera-Luque.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex flex-col items-center w-full group cursor-pointer"
+                            >
                                 <div className="relative w-20 h-26 opacity-70 group-hover:opacity-100 transition-opacity mb-4">
                                     <Image
                                         src="/images/bibliography/530aa01d8faf4d58a3e08e8a24c32836.avif"
@@ -112,7 +122,7 @@ export default function Bibliography() {
                                 <span className="text-[8px] md:text-[8px] tracking-[0.1em] text-[#B5A691]/80 font-din uppercase opacity-70 group-hover:opacity-100 transition-opacity whitespace-nowrap">
                                     DOWNLOAD FREE COPY
                                 </span>
-                            </div>
+                            </a>
 
                             {/* Large Index Number */}
                             <div className="select-none mt-8 md:mt-0">
@@ -151,20 +161,30 @@ export default function Bibliography() {
                     <div className="w-full flex flex-col md:flex-row items-center md:items-stretch gap-8 md:gap-4">
 
                         {/* Book Cover Image */}
-                        <div className="relative aspect-2/3 w-full max-w-[480px] opacity-90">
+                        <a
+                            href="/files/DonAgustindeHerrerayRojas.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="relative aspect-2/3 w-full max-w-[480px] opacity-90 cursor-pointer block hover:opacity-100 transition-opacity"
+                        >
                             <Image
                                 src="/images/bibliography/Biblio-2-Don-Agustin-de-Herrera-y-Rojas.avif"
                                 alt="Don Augustin de Herrera y Rojas - Book Cover"
                                 fill
                                 className="object-contain sepia-[0.5] saturate-[0.3] grayscale-[0.5] brightness-[0.7]"
                             />
-                        </div>
+                        </a>
 
                         {/* Download & Index Area - Aligned as per Ref */}
                         <div className="flex flex-col items-center justify-between py-2 w-full max-w-[140px] mt-5">
 
                             {/* PDF Download Area */}
-                            <div className="flex flex-col items-center w-full group cursor-pointer">
+                            <a
+                                href="/files/DonAgustindeHerrerayRojas.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex flex-col items-center w-full group cursor-pointer"
+                            >
                                 <div className="relative w-20 h-26 opacity-70 group-hover:opacity-100 transition-opacity mb-4">
                                     <Image
                                         src="/images/bibliography/530aa01d8faf4d58a3e08e8a24c32836.avif"
@@ -178,7 +198,7 @@ export default function Bibliography() {
                                 <span className="text-[8px] md:text-[8px] tracking-[0.1em] text-[#B5A691]/80 font-din uppercase opacity-70 group-hover:opacity-100 transition-opacity whitespace-nowrap">
                                     DOWNLOAD FREE COPY
                                 </span>
-                            </div>
+                            </a>
 
                             {/* Large Index Number */}
                             <div className="select-none mt-8 md:mt-0">
@@ -217,7 +237,12 @@ export default function Bibliography() {
                     <div className="w-full flex flex-col md:flex-row items-center md:items-stretch gap-8 md:gap-4">
 
                         {/* Visual Presentation Block */}
-                        <div className="w-full max-w-[480px]">
+                        <a
+                            href="/files/LA-VEGA.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full max-w-[480px] cursor-pointer block hover:opacity-100 transition-opacity"
+                        >
                             {/* Historical Photo */}
                             <div className="relative aspect-video w-full opacity-90 mb-0">
                                 <Image
@@ -238,13 +263,18 @@ export default function Bibliography() {
                                     Y Rojas De Ayala (1569-1632)
                                 </p>
                             </div>
-                        </div>
+                        </a>
 
                         {/* Download & Index Area */}
                         <div className="flex flex-col items-center justify-between py-2 w-full max-w-[140px] mt-5">
 
                             {/* PDF Download Area */}
-                            <div className="flex flex-col items-center w-full group cursor-pointer">
+                            <a
+                                href="/files/LA-VEGA.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex flex-col items-center w-full group cursor-pointer"
+                            >
                                 <div className="relative w-20 h-26 opacity-70 group-hover:opacity-100 transition-opacity mb-4">
                                     <Image
                                         src="/images/bibliography/530aa01d8faf4d58a3e08e8a24c32836.avif"
@@ -258,7 +288,7 @@ export default function Bibliography() {
                                 <span className="text-[8px] md:text-[8px] tracking-[0.1em] text-[#B5A691]/80 font-din uppercase opacity-70 group-hover:opacity-100 transition-opacity whitespace-nowrap">
                                     DOWNLOAD FREE COPY
                                 </span>
-                            </div>
+                            </a>
 
                             {/* Large Index Number */}
                             <div className="select-none mt-8 md:mt-0">
