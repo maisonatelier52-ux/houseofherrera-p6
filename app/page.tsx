@@ -59,14 +59,14 @@ export default function Home() {
                   {item.id === "about" ? (
                     <Link
                       href={item.href}
-                      className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.2em] md:tracking-wider text-[0.55rem] md:text-[0.60rem] font-light text-white/20 hover:text-white/40 text-center md:text-left"
+                      className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.2em] md:tracking-wider text-[0.55rem] md:text-[0.60rem] font-light text-white/60 md:text-white/35 hover:text-white/40 text-center md:text-left"
                     >
                       {item.label}
                     </Link>
                   ) : (
                     <a
                       href={item.href}
-                      className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.2em] md:tracking-wider text-[0.55rem] md:text-[0.60rem] font-light text-white/20 hover:text-white/40 text-center md:text-left"
+                      className="whitespace-pre-line uppercase relative inline-block no-underline transition-all duration-300 ease-in-out tracking-[0.2em] md:tracking-wider text-[0.55rem] md:text-[0.60rem] font-light text-white/60 md:text-white/35 hover:text-white/40 text-center md:text-left"
                     >
                       {item.label}
                     </a>
