@@ -54,7 +54,7 @@ export const ancestors: AncestorData[] = [
         date: "1569 - 1632",
         crestImage: "/images/about/hofHP (1)-1ee.png",
         historyImages: [
-            "/images/Agustin De Herrera.avif"
+            "/images/Agustin de herrera.avif"
         ],
         bioParagraphs: [
             "A descendant of King Diego Garcia de Herrera y Ayala, Agustin was the first in the family to receive the title of Count of Lanzarote, created by King Philip II in 1548, in his favour, which was later elevated to the title of Marquis (1567) to reward him for his services rendered to the Kingdom.",
