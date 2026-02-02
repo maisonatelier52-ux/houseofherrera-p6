@@ -97,7 +97,7 @@ export default function OrdersAndDistinctions() {
                             src="/images/symbols/lanzarote cost of arms 1.png"
                             alt="Marquisate de Lanzarote Coat of Arms"
                             fill
-                            className="object-contain"
+                            className="object-contain sepia brightness-[0.6]"
                         />
                     </div>
                 </div>
@@ -138,7 +138,7 @@ export default function OrdersAndDistinctions() {
                             src="/images/symbols/MARQUISATE OF HERRERA-2.png"
                             alt="Marquisate of Herrera and Vallehermoso Coat of Arms"
                             fill
-                            className="object-contain"
+                            className="object-contain sepia brightness-[0.6]"
                         />
                     </div>
                 </div>
