@@ -177,14 +177,14 @@ export const ancestors: AncestorData[] = [
             "/images/about/Herrera10.avif"
         ],
         bioParagraphs: [
-            "Marquis of Lanzarote and Count of Palomar.",
-            "A lawyer by profession, he studied in Venezuela and in the United States.",
-            "In 1936, he co-founded the National Action Movement (MAN), with a purpose to fight against extremism, communism, dissolution and social unrest, and ultimately opposing the propagation of the Marxist-Leninist ideology in Venezuela, by any means necessary."
+            "A good example of diplomacy, civic engagement, and building institutions.",
+            "After finishing school in the US and Venezuela, he became a lawyer.",
+            "He co-founded the National Action Movement (MAN) in 1936, during a time of ideological fighting in Venezuela. The group wanted to keep the peace and fight political bigotry. He worked to make sure that institutional stability and national union."
         ],
         legacyParagraphs: [
-            "In 1950, Jose Herrera Von Uslar Gleichen advocated a strong movement which oversaw the adoption of World War II orphans.",
-            "When he was Ambassador to Sweden, Herrera Uslar organised the transfer of 1,000 orphaned war refugees in Switzerland.",
-            "The orphans arrived in Venezuela in batches of 50 children, and were welcomed to the colony of Catia La Mar, where they were adopted by Venezuelan families."
+            "Herrera Uslar's legacy was imprinted for his humanitarian work after World War II. As Sweden's ambassador, he helped move about a thousand orphaned refugees who were fleeing the war in Switzerland to Venezuela.",
+            "Families from Venezuela took in groups of children and put them in homes in Catia La Mar. This made their new start very different from the destruction in Europe.",
+            "Jose Herrera Uslar was both a statesman and a benefactor who embodied the House of Herrera’s tradition of civic service, international engagement, and kindness during times of global crisis."
         ]
     },
     {
