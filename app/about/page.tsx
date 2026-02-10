@@ -62,17 +62,14 @@ export default function About() {
                     <div className="mb-8">
                         <h2 className="text-[3.5rem] md:text-[7rem] font-libre text-[#B5A691] leading-[0.7] tracking-tighter">
                             <span className=" font-light block mb-5 scale-y-110">The</span>
-                            <span className=" -tracking-[0.05em] block">Dynasty</span>
+                            <span className=" -tracking-[0.05em] block">Humanitarian</span>
                         </h2>
                     </div>
 
                     {/* Description Text */}
                     <div className="max-w-3xl mb-6 mt-8">
                         <p className="text-[12px] md:text-[13px] font-helvetica font-extralight tracking-tighter text-[#B5A691]/80 leading-relaxed md:text-left">
-                            The Herrera Family is a longstanding patrimony of Spanish nobility that gained prominence in the 14th century.
-                            The family is notably distinguished as landowners, lords, conquerors, merchants and later, bankers with
-                            unbound influence in Spain, the Canaries, Latin America, Germany and England. The House of Herrera was
-                            established as a deference to the trust and responsibilities warranted over centuries of partnerships.
+                            Serving as Venezuela’s Ambassador to Sweden in 1950, José Herrera von Uslar Gleichen was guardian to over a thousand war orphans who lost their families in the aftermath of World War II. He organised safe passage for the children from Switzerland to Venezuela, where they were received at Catia La Mar by Venezuelan families with nurturing hands. This endeavour transformed the children’s life from one of uncertainty to one filled with stability and safety. His thoughtfulness towards uprooted children went beyond philanthropy. Along with his wife Clementina Velutini, he adopted three war orphans who were taking refuge in Switzerland. This decision was a testament of his personal commitment to the cause he publicly advocated.
                         </p>
                     </div>
 
@@ -113,25 +110,15 @@ export default function About() {
                     {/* Header Title */}
                     <div className="mb-10 text-center md:text-left">
                         <h2 className="text-[3.5rem] md:text-[7rem] font-libre text-[#B5A691] leading-[0.8] tracking-tighter">
-                            <span className="font-light block mb-2">House of</span>
-                            <span className="font-medium block">Herrera</span>
+                            <span className="font-light block mb-2">The Legal</span>
+                            <span className="font-medium block">Eagle</span>
                         </h2>
                     </div>
 
                     {/* Description Text Blocks */}
                     <div className="space-y-6 mb-8 text-center md:text-left">
                         <p className="text-[12px] md:text-[13px] font-helvetica font-extralight tracking-tight text-[#B5A691]/80 leading-relaxed">
-                            The Herrera family has been known since the 14th century mainly for acts of bravery that have
-                            earned them titles and conquests over the generations. The family has exerted a strong military
-                            and political influence, and is imbued with traditions and values that endure today. Over the course
-                            of seven centuries, the Herrera family has played a key role in the development of finance,
-                            commerce and fashion in Spain, North and Latin America, and more recently in the UK and beyond.
-                        </p>
-                        <p className="text-[12px] md:text-[13px] font-helvetica font-extralight tracking-tight text-[#B5A691]/80 leading-relaxed">
-                            The Herrera family has had a pivotal influence on Latin American and Caribbean history and has
-                            especially influenced the Latin American Banking & Real Estate industry since 14th century with the
-                            founding of Hacienda La Vega (1590) and in the late 19th century (1890) with the founding of
-                            Banco Caracas by Julio César Velutini Couturier, who chaired Banco Caracas until 1930.
+                            Prior to his career as a Venezuelan diplomat, José Herrera Uslar was a lawyer who played a pivotal role in founding formal civic and sporting institutions. On January 14, 1930, he found the Basketball Federation of Venezuela, serving as its first president. Later, he helped found the Progressive Republican Party (PRP) in 1936. Along with Juan Jose Mendoza, Martin Vegas, Manuel Antonio Matos, Francisco Pimentel, and others, this organization aimed to fight extremism, social dissolution, and opposed the spread of Marxist ideology in Venezuela.
                         </p>
                     </div>
 
